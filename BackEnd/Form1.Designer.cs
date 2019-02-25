@@ -1,4 +1,4 @@
-﻿namespace BackEnd
+﻿namespace BackOffice
 {
     partial class Form1
     {

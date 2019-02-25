@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FrontEnd {
+namespace FrontOffice {
     
     
     public partial class Default {

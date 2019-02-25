@@ -1,30 +1,28 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="FrontEnd.Default" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="FrontOffice.Default" %>
 
 <!DOCTYPE html> 
  
 <html>    
   <head id="Head1" runat="server">       
-    <title>Sample Master Page</title>     
+    <title>Master Page</title>     
     <link href="Default.css" rel="stylesheet" type="text/css" />    
   </head> 
  
   <body>         
     <form id="form1" runat="server">
       <header>
-        Header text here
+        Police Incident Management System
       </header>  
       <article>
-        Your text here  
+     
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">  
         </asp:ContentPlaceHolder>        
       </article>             
     
-      <nav>                
-        Navigation links here
-      </nav>               
+                
     
       <footer>                 
-        Footer text here        
+       
       </footer>         
     </form>
   </body> 
