@@ -21,9 +21,9 @@ article {
     background-color: #fff;
     position: fixed;
     width: 100%;
-    top: 8.5%;
+    top: 9%;
     left: 0%;
-    height: 755px;
+    height: 908px;
     border: solid;
     border-color: #000000;
 }
@@ -33,7 +33,7 @@ footer {
     height: 50px;
     position: fixed;
     width: 100%;
-    top: 94%;
+    top: 908px;
     left: 0%;
     border: solid;
     border-color: #000000;
