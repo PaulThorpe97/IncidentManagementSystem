@@ -12,15 +12,13 @@
     <form id="form1" runat="server">
       <header>
         Police Incident Management System
-      </header>  
+      </header> 
+
       <article>
-     
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">  
         </asp:ContentPlaceHolder>        
       </article>             
-    
-                
-    
+
       <footer>                 
        
       </footer>         

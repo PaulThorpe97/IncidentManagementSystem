@@ -5,7 +5,7 @@
 
 header {
     background-color: #003B6F;
-    height: 10%;
+    height: 50px;
     position: fixed;
     width: 100%;
     top: 0%;
@@ -17,24 +17,26 @@ header {
     border-color: #000000;
 }
 
-footer {
-    background-color: #003B6F;
-    height: 10%;
+article {
+    background-color: #fff;
     position: fixed;
     width: 100%;
-    top: 90%;
+    top: 8.5%;
+    left: 0%;
+    height: 755px;
+    border: solid;
+    border-color: #000000;
+}
+
+footer {
+    background-color: #003B6F;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 94%;
     left: 0%;
     border: solid;
     border-color: #000000;
 }
 
-article {
-    background-color: #fff;
-    position: fixed;
-    width: 100%;
-    top: 10%;
-    left: 0%;
-    height: 689px;
-    border: solid;
-    border-color: #000000;
-}
+
