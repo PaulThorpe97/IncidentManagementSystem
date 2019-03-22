@@ -3,9 +3,9 @@
     <p>
         <span style="text-decoration: underline">
         <strong><em>Add New Incident Screen</em></strong></span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="btnAddIncident" runat="server" style="font-weight: bold" Text="Add Incident" />
-        <asp:Button ID="btnAddIncidentCancel" runat="server" style="font-weight: bold" Text="Cancel" />
-    </p>
+        </p>
+    <p>
+        &nbsp;</p>
     <hr>
     <p>
         <span style="color: #CC0000">*</span>Staff ID:&nbsp;
@@ -14,6 +14,8 @@
         Assign Incident to: <asp:TextBox ID="txtAssignIncidentTo" runat="server"></asp:TextBox>
         <span style="color: #CC0000">&nbsp;&nbsp;&nbsp;&nbsp; *</span>Logged by: <asp:TextBox ID="txtLoggedBy" runat="server"></asp:TextBox>
     </p>
+    <p>
+        &nbsp;</p>
     <hr>
     <p>
         <span style="color: #CC0000">*</span>Equipment Name:
@@ -24,6 +26,8 @@
     &nbsp;&nbsp;&nbsp;&nbsp;
         Software:<asp:CheckBox ID="chkSoftware" runat="server" />
     </p>
+    <p>
+        &nbsp;</p>
     <hr>
     <p style="text-decoration: underline">
         <strong><em>Incident Priority:</em></strong></p>
@@ -34,6 +38,8 @@
     &nbsp;&nbsp;&nbsp;&nbsp;
         c) <span style="color: #009933">Low</span>:<asp:CheckBox ID="chkLow" runat="server" />
     </p>
+    <p>
+        &nbsp;</p>
     <hr>
     <p style="text-decoration: underline">
         <strong><em>Incident Status:</em></strong></p>
@@ -42,9 +48,17 @@
     &nbsp;&nbsp;&nbsp;&nbsp;
         b) In Progress:<asp:CheckBox ID="chkInProgress" runat="server" />
     </p>
+    <p>
+        &nbsp;</p>
     <hr>
     <br />
     <span style="color: #CC0000">*</span><span style="text-decoration: underline"><em><strong>Incident Description:<br />
     <br />
     <asp:TextBox ID="TextBox1" runat="server" Height="78px" Width="637px"></asp:TextBox>
-    </strong></em></span></asp:Content>
+    <br />
+    <br />
+    <br />
+    </strong></em></span>
+        <asp:Button ID="btnAddIncident" runat="server" style="font-weight: bold" Text="Add Incident" />
+        &nbsp;<asp:Button ID="btnAddIncidentCancel" runat="server" style="font-weight: bold" Text="Cancel" />
+    </asp:Content>
