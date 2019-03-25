@@ -12,6 +12,7 @@ header {
     left: 0%;
     text-align: center;
     font-size: xx-large;
+    text-decoration:underline;
     color: #fff;
     border: solid;
     border-color: #000000;
@@ -21,9 +22,9 @@ article {
     background-color: #fff;
     position: fixed;
     width: 100%;
-    top: 9%;
+    top: 5%;
     left: 0%;
-    height: 908px;
+    height: 915px;
     border: solid;
     border-color: #000000;
 }

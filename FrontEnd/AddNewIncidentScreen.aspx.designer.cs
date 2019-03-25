@@ -13,13 +13,13 @@ namespace FrontEnd {
     public partial class AddNewIncidentScreen {
         
         /// <summary>
-        /// txtAddNewIncidentStaffID control.
+        /// txtAddStaffID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAddNewIncidentStaffID;
+        protected global::System.Web.UI.WebControls.TextBox txtAddStaffID;
         
         /// <summary>
         /// txtAssignIncidentTo control.
@@ -40,13 +40,13 @@ namespace FrontEnd {
         protected global::System.Web.UI.WebControls.TextBox txtLoggedBy;
         
         /// <summary>
-        /// btnAddNewIncidentEquipmentName control.
+        /// btnAddEquipmentName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox btnAddNewIncidentEquipmentName;
+        protected global::System.Web.UI.WebControls.TextBox btnAddEquipmentName;
         
         /// <summary>
         /// chkHardware control.
@@ -112,13 +112,13 @@ namespace FrontEnd {
         protected global::System.Web.UI.WebControls.CheckBox chkInProgress;
         
         /// <summary>
-        /// TextBox1 control.
+        /// txtIncidentDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txtIncidentDescription;
         
         /// <summary>
         /// btnAddIncident control.
@@ -130,12 +130,12 @@ namespace FrontEnd {
         protected global::System.Web.UI.WebControls.Button btnAddIncident;
         
         /// <summary>
-        /// btnAddIncidentCancel control.
+        /// btnAddCancel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddIncidentCancel;
+        protected global::System.Web.UI.WebControls.Button btnAddCancel;
     }
 }
