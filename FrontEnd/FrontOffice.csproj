@@ -68,8 +68,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddNewIncidentScreen.aspx" />
+    <Content Include="ClosedIncidentsHomeScreen.aspx" />
+    <Content Include="CloseIncidentScreen.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Default.css" />
+    <Content Include="DeleteClosedIncidentScreen.aspx" />
+    <Content Include="DeleteIncidentScreen.aspx" />
+    <Content Include="EditClosedIncidentScreen.aspx" />
     <Content Include="EditIncidentScreen.aspx" />
     <Content Include="Global.asax" />
     <Content Include="HomeScreen.aspx" />
@@ -82,6 +87,20 @@
     </Compile>
     <Compile Include="AddNewIncidentScreen.aspx.designer.cs">
       <DependentUpon>AddNewIncidentScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClosedIncidentsHomeScreen.aspx.cs">
+      <DependentUpon>ClosedIncidentsHomeScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClosedIncidentsHomeScreen.aspx.designer.cs">
+      <DependentUpon>ClosedIncidentsHomeScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CloseIncidentScreen.aspx.cs">
+      <DependentUpon>CloseIncidentScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CloseIncidentScreen.aspx.designer.cs">
+      <DependentUpon>CloseIncidentScreen.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -96,6 +115,27 @@
     </Compile>
     <Compile Include="Default.Master.designer.cs">
       <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteClosedIncidentScreen.aspx.cs">
+      <DependentUpon>DeleteClosedIncidentScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteClosedIncidentScreen.aspx.designer.cs">
+      <DependentUpon>DeleteClosedIncidentScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteIncidentScreen.aspx.cs">
+      <DependentUpon>DeleteIncidentScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteIncidentScreen.aspx.designer.cs">
+      <DependentUpon>DeleteIncidentScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditClosedIncidentScreen.aspx.cs">
+      <DependentUpon>EditClosedIncidentScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditClosedIncidentScreen.aspx.designer.cs">
+      <DependentUpon>EditClosedIncidentScreen.aspx</DependentUpon>
     </Compile>
     <Compile Include="EditIncidentScreen.aspx.cs">
       <DependentUpon>EditIncidentScreen.aspx</DependentUpon>

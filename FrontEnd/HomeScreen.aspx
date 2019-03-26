@@ -17,7 +17,7 @@
     List Of Incidents<br />
     <br>
     </strong>
-    <asp:ListBox ID="ListBox1" runat="server" Height="421px" Width="1000px" style="text-align: center"></asp:ListBox>
+    <asp:ListBox ID="lstIncidents" runat="server" Height="421px" Width="1000px" style="text-align: center"></asp:ListBox>
     <br />
     <br />
     </span>
@@ -46,6 +46,10 @@
     </em>Delete incident details: <strong>
     <asp:Button ID="btnDeleteIncidentDetails" runat="server" style="font-weight: bold; margin-bottom: 0px" Text="Delete" />
     </strong>
+    </p>
+    <p>
+        Close incident:
+        <asp:Button ID="btnCloseIncident" runat="server" style="font-weight: 700" Text="Close" />
     </p>
     <br />
     <br />
