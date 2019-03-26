@@ -17,6 +17,8 @@
         <asp:TextBox ID="txtEditAssignIncidentTo" runat="server"></asp:TextBox>
         <span style="color: #CC0000">&nbsp;&nbsp;&nbsp;&nbsp; *</span>Logged by: 
         <asp:TextBox ID="txtEditLoggedBy" runat="server"></asp:TextBox>
+        <span style="color: #CC0000">&nbsp;&nbsp;&nbsp;&nbsp; *</span>Date of Occurrence:
+        <asp:TextBox ID="txtEditDateOfOccurrence" runat="server"></asp:TextBox>
     </p>
     <p>
         &nbsp;</p>

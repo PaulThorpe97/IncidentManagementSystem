@@ -10,25 +10,16 @@
 namespace FrontEnd {
     
     
-    public partial class HomeScreen {
+    public partial class ClosedIncidentsHomeScreen {
         
         /// <summary>
-        /// btnAddNewIncident control.
+        /// btnHome control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddNewIncident;
-        
-        /// <summary>
-        /// btnSearhForClosedIncidents control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSearhForClosedIncidents;
+        protected global::System.Web.UI.WebControls.Button btnHome;
         
         /// <summary>
         /// btnLogOut control.
@@ -40,22 +31,22 @@ namespace FrontEnd {
         protected global::System.Web.UI.WebControls.Button btnLogOut;
         
         /// <summary>
-        /// lstIncidents control.
+        /// lstClosedIncidents control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox lstIncidents;
+        protected global::System.Web.UI.WebControls.ListBox lstClosedIncidents;
         
         /// <summary>
-        /// btnDisplayAllIncidents control.
+        /// btnDisplayAllClosedIncidents control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnDisplayAllIncidents;
+        protected global::System.Web.UI.WebControls.Button btnDisplayAllClosedIncidents;
         
         /// <summary>
         /// txtFilterByStaffID control.
@@ -67,39 +58,30 @@ namespace FrontEnd {
         protected global::System.Web.UI.WebControls.TextBox txtFilterByStaffID;
         
         /// <summary>
-        /// btnSearchForIncident control.
+        /// btnSearchForClosedIncident control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSearchForIncident;
+        protected global::System.Web.UI.WebControls.Button btnSearchForClosedIncident;
         
         /// <summary>
-        /// btnEditIncidentDetails control.
+        /// btnEditClosedIncidentDetails control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEditIncidentDetails;
+        protected global::System.Web.UI.WebControls.Button btnEditClosedIncidentDetails;
         
         /// <summary>
-        /// btnDeleteIncidentDetails control.
+        /// btnDeleteClosedIncidentDetails control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnDeleteIncidentDetails;
-        
-        /// <summary>
-        /// btnCloseIncident control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCloseIncident;
+        protected global::System.Web.UI.WebControls.Button btnDeleteClosedIncidentDetails;
     }
 }
