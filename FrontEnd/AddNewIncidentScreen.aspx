@@ -19,7 +19,7 @@
     <hr>
     <p>
         <span style="color: #CC0000">*</span>Equipment Name:
-        <asp:TextBox ID="btnAddEquipmentName" runat="server" OnTextChanged="btnAddNewIncidentEquipmentName_TextChanged"></asp:TextBox>
+        <asp:TextBox ID="txtAddEquipmentName" runat="server"></asp:TextBox>
     &nbsp;&nbsp;&nbsp;&nbsp;
         Hardware:
         <asp:CheckBox ID="chkHardware" runat="server" />

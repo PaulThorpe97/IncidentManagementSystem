@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Default.Master" AutoEventWireup="true" CodeBehind="EditIncidentScreen.aspx.cs" Inherits="FrontEnd.EditIncidentScreen" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
-        <span style="text-decoration: underline; font-size: large;"><strong><em>Edit Incident Screen</em></strong></span><span style="font-size: x-large;">&nbsp;&nbsp;&nbsp;&nbsp; </span>
+        <span style="text-decoration: underline; font-size: x-large;"><strong><em>Edit Incident Screen</em></strong></span><span style="font-size: x-large;">&nbsp;&nbsp;&nbsp;&nbsp; </span>
     <asp:Button ID="btnEditSave" runat="server" style="font-weight: bold" Text="Save" />
     <asp:Button ID="btnEditCancel" runat="server" style="font-weight: bold" Text="Cancel" />
         &nbsp;&nbsp;&nbsp;&nbsp;

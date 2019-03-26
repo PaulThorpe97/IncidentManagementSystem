@@ -68,9 +68,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddNewIncidentScreen.aspx" />
+    <Content Include="AdministratorAddNewEquipmentScreen.aspx" />
+    <Content Include="AdministratorAddNewRoleScreen.aspx" />
+    <Content Include="AdministratorAddNewStaffScreen.aspx" />
+    <Content Include="AdministratorDeleteEquipmentScreen.aspx" />
+    <Content Include="AdministratorDeleteRoleScreen.aspx" />
+    <Content Include="AdministratorDeleteStaffScreen.aspx" />
+    <Content Include="AdministratorEditEquipmentScreen.aspx" />
+    <Content Include="AdministratorEditRoleScreen.aspx" />
+    <Content Include="AdministratorEditStaffScreen.aspx" />
+    <Content Include="AdministratorEquipmentScreen.aspx" />
+    <Content Include="AdministratorHomeScreen.aspx" />
+    <Content Include="AdministratorRoleScreen.aspx" />
+    <Content Include="AdministratorStaffScreen.aspx" />
     <Content Include="ClosedIncidentsHomeScreen.aspx" />
     <Content Include="CloseIncidentScreen.aspx" />
-    <Content Include="Default.aspx" />
     <Content Include="Default.css" />
     <Content Include="DeleteClosedIncidentScreen.aspx" />
     <Content Include="DeleteIncidentScreen.aspx" />
@@ -88,6 +100,97 @@
     <Compile Include="AddNewIncidentScreen.aspx.designer.cs">
       <DependentUpon>AddNewIncidentScreen.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdministratorAddNewEquipmentScreen.aspx.cs">
+      <DependentUpon>AdministratorAddNewEquipmentScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorAddNewEquipmentScreen.aspx.designer.cs">
+      <DependentUpon>AdministratorAddNewEquipmentScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorAddNewRoleScreen.aspx.cs">
+      <DependentUpon>AdministratorAddNewRoleScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorAddNewRoleScreen.aspx.designer.cs">
+      <DependentUpon>AdministratorAddNewRoleScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorAddNewStaffScreen.aspx.cs">
+      <DependentUpon>AdministratorAddNewStaffScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorAddNewStaffScreen.aspx.designer.cs">
+      <DependentUpon>AdministratorAddNewStaffScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorDeleteEquipmentScreen.aspx.cs">
+      <DependentUpon>AdministratorDeleteEquipmentScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorDeleteEquipmentScreen.aspx.designer.cs">
+      <DependentUpon>AdministratorDeleteEquipmentScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorDeleteRoleScreen.aspx.cs">
+      <DependentUpon>AdministratorDeleteRoleScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorDeleteRoleScreen.aspx.designer.cs">
+      <DependentUpon>AdministratorDeleteRoleScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorDeleteStaffScreen.aspx.cs">
+      <DependentUpon>AdministratorDeleteStaffScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorDeleteStaffScreen.aspx.designer.cs">
+      <DependentUpon>AdministratorDeleteStaffScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorEditEquipmentScreen.aspx.cs">
+      <DependentUpon>AdministratorEditEquipmentScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorEditEquipmentScreen.aspx.designer.cs">
+      <DependentUpon>AdministratorEditEquipmentScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorEditRoleScreen.aspx.cs">
+      <DependentUpon>AdministratorEditRoleScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorEditRoleScreen.aspx.designer.cs">
+      <DependentUpon>AdministratorEditRoleScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorEditStaffScreen.aspx.cs">
+      <DependentUpon>AdministratorEditStaffScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorEditStaffScreen.aspx.designer.cs">
+      <DependentUpon>AdministratorEditStaffScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorEquipmentScreen.aspx.cs">
+      <DependentUpon>AdministratorEquipmentScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorEquipmentScreen.aspx.designer.cs">
+      <DependentUpon>AdministratorEquipmentScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorHomeScreen.aspx.cs">
+      <DependentUpon>AdministratorHomeScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorHomeScreen.aspx.designer.cs">
+      <DependentUpon>AdministratorHomeScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorRoleScreen.aspx.cs">
+      <DependentUpon>AdministratorRoleScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorRoleScreen.aspx.designer.cs">
+      <DependentUpon>AdministratorRoleScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorStaffScreen.aspx.cs">
+      <DependentUpon>AdministratorStaffScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorStaffScreen.aspx.designer.cs">
+      <DependentUpon>AdministratorStaffScreen.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ClosedIncidentsHomeScreen.aspx.cs">
       <DependentUpon>ClosedIncidentsHomeScreen.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -101,13 +204,6 @@
     </Compile>
     <Compile Include="CloseIncidentScreen.aspx.designer.cs">
       <DependentUpon>CloseIncidentScreen.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.Master.cs">
       <DependentUpon>Default.Master</DependentUpon>

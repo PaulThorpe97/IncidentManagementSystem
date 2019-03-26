@@ -1,8 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Default.Master" AutoEventWireup="true" CodeBehind="EditClosedIncidentScreen.aspx.cs" Inherits="FrontEnd.EditClosedIncidentScreen" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <span style="font-size: large; color: #000000"><span style="text-decoration: underline"><strong><em>
+    <span style="text-decoration: underline">    <span style="font-size: large; color: #000000"><strong><em>
     <br />
-    Edit Closed Incident Screen</em></strong></span>&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>
+    </em></strong>
+    </span>
+    <strong><em>
+<span style="font-size: x-large; color: #000000">Edit Closed Incident Screen</span></em></strong></span><span style="font-size: large; color: #000000">&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>
     <asp:Button ID="btnClosedEditSave" runat="server" style="font-weight: bold" Text="Save" />
     </em></strong><em><strong>
     <asp:Button ID="btnClosedEditCancel" runat="server" style="font-weight: bold" Text="Cancel" />

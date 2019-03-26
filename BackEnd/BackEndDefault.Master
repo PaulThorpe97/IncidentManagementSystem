@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BackEndDefault.master.cs" Inherits="BackEnd.BackEndDefault" %>
+
+<!DOCTYPE html>
+
+<html>    
+  <head id="Head1" runat="server">       
+    <title>Master Page</title>     
+    <link href="BackEndDefault.css" rel="stylesheet" type="text/css" />    
+  </head> 
+ 
+  <body>         
+    <form id="form1" runat="server">
+      <header>
+        Police Incident Management System
+      </header> 
+
+      <article>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">  
+        </asp:ContentPlaceHolder>        
+      </article>             
+
+      <footer>                 
+       
+      </footer>         
+    </form>
+  </body> 
+</html> 
