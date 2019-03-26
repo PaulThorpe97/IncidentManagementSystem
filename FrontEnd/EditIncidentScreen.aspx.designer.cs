@@ -13,15 +13,6 @@ namespace FrontEnd {
     public partial class EditIncidentScreen {
         
         /// <summary>
-        /// btnEditHome control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEditHome;
-        
-        /// <summary>
         /// btnEditSave control.
         /// </summary>
         /// <remarks>
@@ -166,6 +157,15 @@ namespace FrontEnd {
         protected global::System.Web.UI.WebControls.TextBox txtCommentStaffID;
         
         /// <summary>
+        /// txtComment control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtComment;
+        
+        /// <summary>
         /// btnCommentsAdd control.
         /// </summary>
         /// <remarks>
@@ -184,21 +184,21 @@ namespace FrontEnd {
         protected global::System.Web.UI.WebControls.Button btnCommentsCancel;
         
         /// <summary>
-        /// txtComments control.
+        /// btnDisplayComments control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtComments;
+        protected global::System.Web.UI.WebControls.Button btnDisplayComments;
         
         /// <summary>
-        /// lstCommentsHistory control.
+        /// lstCommentHistory control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox lstCommentsHistory;
+        protected global::System.Web.UI.WebControls.ListBox lstCommentHistory;
     }
 }
