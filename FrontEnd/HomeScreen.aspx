@@ -17,7 +17,7 @@
     List Of Incidents<br />
     <br>
     </strong>
-    <asp:ListBox ID="lstIncidents" runat="server" Height="421px" Width="1000px" style="text-align: center"></asp:ListBox>
+    <asp:ListBox ID="lstIncidents" runat="server" Height="421px" Width="1000px" style="text-align: left"></asp:ListBox>
     <br />
     <br />
     </span>
