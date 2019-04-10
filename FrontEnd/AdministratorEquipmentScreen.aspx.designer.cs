@@ -13,15 +13,6 @@ namespace FrontEnd {
     public partial class AdministratorEquipmentScreen {
         
         /// <summary>
-        /// btnAddNewEquipment control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddNewEquipment;
-        
-        /// <summary>
         /// btnLogOut control.
         /// </summary>
         /// <remarks>
@@ -49,13 +40,13 @@ namespace FrontEnd {
         protected global::System.Web.UI.WebControls.Button btnDisplayAllEquipment;
         
         /// <summary>
-        /// txtFilterByStaffID control.
+        /// txtFilterByEquipmentName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFilterByStaffID;
+        protected global::System.Web.UI.WebControls.TextBox txtFilterByEquipmentName;
         
         /// <summary>
         /// btnSearchForEquipment control.
@@ -65,6 +56,15 @@ namespace FrontEnd {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSearchForEquipment;
+        
+        /// <summary>
+        /// btnAddEquipment control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAddEquipment;
         
         /// <summary>
         /// btnEditEquipmentDetails control.
