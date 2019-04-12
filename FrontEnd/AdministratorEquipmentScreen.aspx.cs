@@ -90,27 +90,5 @@ namespace FrontEnd
                 lblError.Text = "Please select a record to edit from the list";
             }
         }
-
-        protected void btnPDF_Click(object sender, EventArgs e)
-        {
-            //add rference of itextsgart.dll and itextsharp.pdfa.dll.
-            Response.ContentType = "application/pdf";
-            Response.AddHeader("content-disposition", "attachment;filename=panel.pdf");
-            Response.Cache.SetCacheability(HttpCacheability.NoCache);
-            StringWriter stringWriter = new StringWriter();
-            HtmlTextWriter htmlTextWriter = new HtmlTextWriter(stringWriter);
-            printDiv.RenderControl(htmlTextWriter);
-            StringReader stringReader = new StringReader(stringWriter.ToString());
-            //Document Doc = new Document (PageSize.A4, 10f, 10f, 100f, 0f);
-            Document Doc = new Document(PageSize.A4, 10f, 10f, 40f, 0f);
-            HTMLWorker htmlparser = new HTMLWorker(Doc);
-            PdfWriter.GetInstance(Doc, Response.OutputStream);
-            Doc.Open();
-            htmlparser.Parse(stringReader);
-            Doc.Close();
-            Response.Write(Doc);
-            Response.End();
-
-        }
     }
 }

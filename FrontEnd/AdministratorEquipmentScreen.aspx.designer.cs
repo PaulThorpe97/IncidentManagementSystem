@@ -22,24 +22,6 @@ namespace FrontEnd {
         protected global::System.Web.UI.WebControls.Button btnLogOut;
         
         /// <summary>
-        /// printDiv control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl printDiv;
-        
-        /// <summary>
-        /// btnPDF control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnPDF;
-        
-        /// <summary>
         /// lstEquipment control.
         /// </summary>
         /// <remarks>

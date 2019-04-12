@@ -6,17 +6,14 @@
         </em></strong>
     </p>
     <hr>
-    <div id="printDiv" runat="server" align="center">
+    <div align="center">
     <p>
-        <asp:Button ID="btnPDF" runat="server" Text="Export to PDF" OnClick="btnPDF_Click" />
         <em><span style="text-decoration: underline"><strong style="text-align: center">
         <br />List Of Equipment<br />
         <br></strong>
         <asp:ListBox ID="lstEquipment" runat="server" Height="421px" Width="523px" style="text-align: center"></asp:ListBox>
         </span></em>
     </p>
-        </div>
-    <div align="center">
     <p>
         <strong>
         <br />
