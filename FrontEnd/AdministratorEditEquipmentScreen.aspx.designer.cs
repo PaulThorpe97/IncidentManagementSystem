@@ -22,22 +22,22 @@ namespace FrontEnd {
         protected global::System.Web.UI.WebControls.TextBox txtEditEquipmentName;
         
         /// <summary>
-        /// txtEditHardware control.
+        /// chkEditEquipmentHardware control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEditHardware;
+        protected global::System.Web.UI.WebControls.CheckBox chkEditEquipmentHardware;
         
         /// <summary>
-        /// txtEditSoftware control.
+        /// chkEditEquipmentSoftware control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEditSoftware;
+        protected global::System.Web.UI.WebControls.CheckBox chkEditEquipmentSoftware;
         
         /// <summary>
         /// txtEditEquipmentDescription control.
@@ -47,6 +47,15 @@ namespace FrontEnd {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtEditEquipmentDescription;
+        
+        /// <summary>
+        /// lblError control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblError;
         
         /// <summary>
         /// btnEditEquipment control.

@@ -4,9 +4,11 @@
         <strong><em>Delete Equipment Screen </em></strong>
     </p>
     <hr />
+    <div align="center">
     <br />Are you sure you wish to delete this equipment?<br />
     <br /><strong>
-    <asp:Button ID="btnDeleteEquipmentYes" runat="server" style="font-weight: bold" Text="Yes" />
-    <asp:Button ID="btnDeleteEquipmentNo" runat="server" style="font-weight: bold" Text="No" />
+    <asp:Button ID="btnDeleteEquipmentYes" runat="server" style="font-weight: bold" Text="Yes" OnClick="btnDeleteEquipmentYes_Click" />
+    <asp:Button ID="btnDeleteEquipmentNo" runat="server" style="font-weight: bold" Text="No" OnClick="btnDeleteEquipmentNo_Click" />
     </strong>
+        </div>
 </asp:Content>

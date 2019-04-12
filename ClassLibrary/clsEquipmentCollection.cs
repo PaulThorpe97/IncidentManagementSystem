@@ -58,16 +58,79 @@ namespace ClassLibrary
         //constructor for the class
         public clsEquipmentCollection()
         {
+            //object for data connection
+            clsDataConnection DB = new clsDataConnection();
+            //execute the stored procedure
+            DB.Execute("sproc_tbl_Equipment_Select_All");
+            //populate the array list with the data table
+            PopulateArray(DB);
+        }
+
+        public int Add()
+        {
+            //adds a new record to the database based on the values of ThisEquipment
+            //conect to the database
+            clsDataConnection DB = new clsDataConnection();
+            //set the parameters for the stored procedure
+            DB.AddParameter("@Equipment_Name", mThisEquipment.Equipment_Name);
+            DB.AddParameter("@Equipment_Hardware", mThisEquipment.Equipment_Hardware);
+            DB.AddParameter("@Equipment_Software", mThisEquipment.Equipment_Software);
+            DB.AddParameter("@Equipment_Description", mThisEquipment.Equipment_Description);
+            //execute the query returning the primary key value
+            return DB.Execute("sproc_tbl_Equipment_Insert");
+        }
+
+        public void Delete()
+        {
+            //deletes the record pointed to by ThisEquipment
+            //connect to the database
+            clsDataConnection DB = new clsDataConnection();
+            //set the parameters for the stored procedure
+            DB.AddParameter("@Equipment_ID", mThisEquipment.Equipment_ID);
+            //execute the stored procedure
+            DB.Execute("sproc_tbl_Equipment_Delete");
+        }
+
+        public void Update()
+        {
+            //update an existing record based on the values of ThisEquipment
+            //Connect to the database
+            clsDataConnection DB = new clsDataConnection();
+            //set the parameters for the stored procedure
+            DB.AddParameter("@Equipment_ID", mThisEquipment.Equipment_ID);
+            DB.AddParameter("@Equipment_Name", mThisEquipment.Equipment_Name);
+            DB.AddParameter("@Equipment_Hardware", mThisEquipment.Equipment_Hardware);
+            DB.AddParameter("@Equipment_Software", mThisEquipment.Equipment_Software);
+            DB.AddParameter("@Equipment_Description", mThisEquipment.Equipment_Description);
+            //execute the stored procedure
+            DB.Execute("sproc_tbl_Equipment_Update");
+        }
+
+        //filters the records based on equipment name
+        public void FilterByEquipment_Name(string Equipment_Name)
+        {
+            //connect to the database
+            clsDataConnection DB = new clsDataConnection();
+            //send the Equipment_Name parameter to the database
+            DB.AddParameter("@Equipment_Name", Equipment_Name);
+            //execute the stored procedure
+            DB.Execute("sproc_tbl_Equipment_Filter_By_Equipment_Name");
+            //populate the array list with the data table
+            PopulateArray(DB);
+        }
+        
+        //populates the array list based on the data table in the parameter DB
+        void PopulateArray(clsDataConnection DB)
+        {
             //var for the index
             Int32 Index = 0;
             //var to store the record count
             Int32 RecordCount = 0;
             //object for data connection
-            clsDataConnection DB = new clsDataConnection();
-            //execute the stored procedure
-            DB.Execute("sproc_tbl_Equipment_Select_All");
             //get the count of records
             RecordCount = DB.Count;
+            //clear the priate array list
+            mEquipmentList = new List<clsEquipment>();
             //while there are records to process
             while (Index < RecordCount)
             {
@@ -84,20 +147,6 @@ namespace ClassLibrary
                 //point at the next record
                 Index++;
             }
-        }
-
-        public int Add()
-        {
-            //adds a new record to the database based on the values of ThisEquipment
-            //conect to the database
-            clsDataConnection DB = new clsDataConnection();
-            //set the parameters for the stored procedure
-            DB.AddParameter("@Equipment_Name", mThisEquipment.Equipment_Name);
-            DB.AddParameter("@Equipment_Hardware", mThisEquipment.Equipment_Hardware);
-            DB.AddParameter("@Equipment_Software", mThisEquipment.Equipment_Software);
-            DB.AddParameter("@Equipment_Description", mThisEquipment.Equipment_Description);
-            //execute the query returning the primary key value
-            return DB.Execute("sproc_tbl_Equipment_Insert");
         }
     }
 }
