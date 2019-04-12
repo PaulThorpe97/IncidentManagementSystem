@@ -13,15 +13,6 @@ namespace FrontEnd {
     public partial class AdministratorEditRoleScreen {
         
         /// <summary>
-        /// txtEditRoleID control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEditRoleID;
-        
-        /// <summary>
         /// txtEditRoleDescription control.
         /// </summary>
         /// <remarks>
@@ -29,6 +20,15 @@ namespace FrontEnd {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtEditRoleDescription;
+        
+        /// <summary>
+        /// lblError control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblError;
         
         /// <summary>
         /// btnEditRole control.

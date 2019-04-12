@@ -13,15 +13,6 @@ namespace FrontEnd {
     public partial class AdministratorRoleScreen {
         
         /// <summary>
-        /// btnAddNewRole control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddNewRole;
-        
-        /// <summary>
         /// btnLogOut control.
         /// </summary>
         /// <remarks>
@@ -31,31 +22,31 @@ namespace FrontEnd {
         protected global::System.Web.UI.WebControls.Button btnLogOut;
         
         /// <summary>
-        /// lstEquipment control.
+        /// lstRole control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox lstEquipment;
+        protected global::System.Web.UI.WebControls.ListBox lstRole;
         
         /// <summary>
-        /// btnDisplayAllRoles control.
+        /// lblError control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnDisplayAllRoles;
+        protected global::System.Web.UI.WebControls.Label lblError;
         
         /// <summary>
-        /// txtFilterByStaffID control.
+        /// txtFilterByRoleID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFilterByStaffID;
+        protected global::System.Web.UI.WebControls.TextBox txtFilterByRoleID;
         
         /// <summary>
         /// btnSearchForRole control.
@@ -65,6 +56,15 @@ namespace FrontEnd {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSearchForRole;
+        
+        /// <summary>
+        /// btnAddRole control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAddRole;
         
         /// <summary>
         /// btnEditRoleDetails control.

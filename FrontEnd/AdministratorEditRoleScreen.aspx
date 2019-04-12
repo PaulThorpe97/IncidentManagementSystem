@@ -3,14 +3,17 @@
     <p style="font-size: x-large; text-decoration: underline">
         <strong><em>Edit Role Screen</em></strong></p>
     <hr />
-    <br /><span style="color: #CC0000">*</span><span style="color: #000000">Role ID</span>:
-    <asp:TextBox ID="txtEditRoleID" runat="server"></asp:TextBox>
+    <span style="color: #CC0000">
     <br />
-    <br /><span style="color: #CC0000">*</span>Role Description:
+    *</span>Role Description:
     <asp:TextBox ID="txtEditRoleDescription" runat="server"></asp:TextBox>
     <br />
+    <br />
+    <br />
+    <asp:Label ID="lblError" runat="server" Text="[lblError]"></asp:Label>
+    <br />
     <br /><strong>
-    <asp:Button ID="btnEditRole" runat="server" style="font-weight: bold" Text="Edit Role" />
-    <asp:Button ID="btnEditRoleCancel" runat="server" style="font-weight: bold" Text="Cancel" />
+    <asp:Button ID="btnEditRole" runat="server" style="font-weight: bold" Text="Edit Role" OnClick="btnEditRole_Click" />
+    <asp:Button ID="btnEditRoleCancel" runat="server" style="font-weight: bold" Text="Cancel" OnClick="btnEditRoleCancel_Click" />
     </strong>
 </asp:Content>

@@ -51,6 +51,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tstEquipment.cs" />
     <Compile Include="tstEquipmentCollection.cs" />
+    <Compile Include="tstRole.cs" />
+    <Compile Include="tstRoleCollection.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

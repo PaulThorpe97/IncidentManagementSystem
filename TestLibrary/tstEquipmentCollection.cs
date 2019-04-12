@@ -16,7 +16,7 @@ namespace TestLibrary
             //test to see that it exists
             Assert.IsNotNull(AEquipment);
         }
-
+    
         [TestMethod]
         public void EquipmentListOK()
         {
@@ -201,6 +201,37 @@ namespace TestLibrary
             FilteredEquipment.FilterByEquipment_Name("Google Chrome");
             //test to see that there are no records
             Assert.AreEqual(0, FilteredEquipment.Count);
+        }
+
+        [TestMethod]
+        public void FilterByEquipmentNameTestDataFound()
+        {
+            //create an instance of the class we want to create
+            clsEquipmentCollection FilteredEquipment = new clsEquipmentCollection();
+            //var to store outcome
+            Boolean OK = true;
+            //apply the equipment that doesn't exist
+            FilteredEquipment.FilterByEquipment_Name("Google Chrome");
+            //check that the correct numnber of records are found
+            if (FilteredEquipment.Count == 2)
+            {
+                //check that the rest record is ID 1
+                if (FilteredEquipment.EquipmentList[0].Equipment_ID !=1)
+                {
+                    OK = false;
+                }
+                //check that the rest record is ID 22
+                if (FilteredEquipment.EquipmentList[1].Equipment_ID != 22)
+                {
+                    OK = false;
+                }
+                else
+                {
+                    OK = false;
+                }
+                //test to see that there are no records
+                Assert.IsTrue(OK);
+            }
         }
     }
 }

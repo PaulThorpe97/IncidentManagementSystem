@@ -42,12 +42,13 @@ namespace FrontEnd
             }
         }
 
+
         //event handler for btnAddEquipment
         protected void btnAddEquipment_Click(object sender, EventArgs e)
         {
             //add the new record
             Add();
-            //all done soredirect ac to the main page
+            //all done so redirect to the main page
             Response.Redirect("AdministratorEquipmentScreen.aspx");
         }
 
@@ -76,6 +77,8 @@ namespace FrontEnd
             }
         }
 
+
+        //event handler for btnEquipmentCancel
         protected void btnAddEquipmentCancel_Click(object sender, EventArgs e)
         {
             //direct to home screen

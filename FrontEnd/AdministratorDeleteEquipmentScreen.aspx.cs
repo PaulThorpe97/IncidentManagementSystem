@@ -40,6 +40,7 @@ namespace FrontEnd
             Response.Redirect("AdministratorEquipmentScreen.aspx");
         }
 
+        //event handler for the no button
         protected void btnDeleteEquipmentNo_Click(object sender, EventArgs e)
         {
             //redirect to the main page

@@ -8,7 +8,7 @@ namespace TestLibrary
     public class tstEquipment
     {
         //good test data
-        //create some test data to mpass to the method
+        //create some test data to pass to the method
         String Equipment_Name = "Microsoft Word";
         String Equipment_Description = "Microsoft Office Application";
 

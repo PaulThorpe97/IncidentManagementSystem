@@ -5,13 +5,12 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.IO;
 
 namespace FrontEnd
 {
     public partial class AdministratorEquipmentScreen : System.Web.UI.Page
     {
-        //this function handles he load eent for the page
+        //this function handles he load event for the page
         protected void Page_Load(object sender, EventArgs e)
         {
             //if this is the first ime the page is displayed

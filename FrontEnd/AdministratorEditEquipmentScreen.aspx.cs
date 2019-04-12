@@ -39,7 +39,7 @@ namespace FrontEnd
             clsEquipmentCollection AddEquipment = new clsEquipmentCollection();
             //validate the data on the web form
             String Error = AddEquipment.ThisEquipment.Valid(txtEditEquipmentName.Text, txtEditEquipmentDescription.Text);
-            //i the data is ok then add it to the object
+            //if the data is ok then add it to the object
             if (Error == "")
             {
                 //get the data entered by the user
