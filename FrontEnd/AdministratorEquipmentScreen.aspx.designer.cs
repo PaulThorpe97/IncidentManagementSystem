@@ -40,6 +40,15 @@ namespace FrontEnd {
         protected global::System.Web.UI.WebControls.Label lblError;
         
         /// <summary>
+        /// btnDisplayAll control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnDisplayAll;
+        
+        /// <summary>
         /// txtFilterByEquipmentName control.
         /// </summary>
         /// <remarks>

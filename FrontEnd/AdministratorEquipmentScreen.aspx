@@ -21,10 +21,13 @@
         </strong>
     </p>
     <p>
-        <span style="text-decoration: underline"><em>
-        <br /></em></span>Filter by equipment name:<strong> <em><span style="text-decoration: underline">
+        Display All:
+        <asp:Button ID="btnDisplayAll" runat="server" OnClick="btnDisplayAll_Click" style="font-weight: 700" Text="Display All" />
+    </p>
+        <p>
+            Filter by equipment name:<strong> <em><span style="text-decoration: underline">
         <asp:TextBox ID="txtFilterByEquipmentName" runat="server"></asp:TextBox>
-        </span></em></strong>&nbsp;<strong><em><span style="text-decoration: underline"><asp:Button ID="btnSearchForEquipment" runat="server" Text="Search for equipment" style="font-weight: bold" />
+        </span></em></strong>&nbsp;<strong><em><span style="text-decoration: underline"><asp:Button ID="btnSearchForEquipment" runat="server" Text="Search for equipment" style="font-weight: bold" OnClick="btnSearchForEquipment_Click" />
         </span></em></strong>
     </p>
     <p>

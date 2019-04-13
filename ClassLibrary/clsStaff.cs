@@ -6,7 +6,7 @@ using System.Text;
 
 namespace ClassLibrary
 {
-    class clsStaff
+    public class clsStaff
     {
         //private data member for the Staff_Forename property
         private String mStaff_Forename;
@@ -16,6 +16,8 @@ namespace ClassLibrary
         private String mStaff_Phone;
         //private data member for the Staff_Surname property
         private String mStaff_Surname;
+        //private data member for the Role_ID property
+        private Int32 mRole_ID;
 
         //public property for Staff_Forename
         public string Staff_Forename
@@ -58,7 +60,6 @@ namespace ClassLibrary
                 //set the value of the private data member
                 mStaff_Phone = value;
             }
-
         }
 
         public string Staff_Surname
@@ -76,6 +77,20 @@ namespace ClassLibrary
 
         }
 
+        public int Role_ID
+        {
+            get
+            {
+                //return the private data
+                return mRole_ID;
+            }
+            set
+            {
+                //set the value of the private data member
+                mRole_ID = value;
+            }
+        }
+
 
         public bool Find(int Staff_ID)
         {
@@ -84,7 +99,7 @@ namespace ClassLibrary
             //add the parameter for the Equipment_ID to search for
             DB.AddParameter("@Staff_ID", Staff_ID);
             //execute the stored procedure
-            DB.Execute("sproc_tbl_Equipment_Filter_By_Staff_ID");
+            DB.Execute("sproc_tbl_Staff_Filter_By_Staff_ID");
             //if one record is found (there should be either one or zero!)
             if (DB.Count == 1)
             {
@@ -93,6 +108,7 @@ namespace ClassLibrary
                 mStaff_ID = Convert.ToInt32(DB.DataTable.Rows[0]["Staff_ID"]);
                 mStaff_Phone = Convert.ToString(DB.DataTable.Rows[0]["Staff_Phone"]);
                 mStaff_Surname = Convert.ToString(DB.DataTable.Rows[0]["Staff_Surname"]);
+                mRole_ID = Convert.ToInt32(DB.DataTable.Rows[0]["Role_ID"]);
                 //return that everything worked ok
                 return true;
             }
@@ -125,8 +141,8 @@ namespace ClassLibrary
                 //record the error
                 Error = Error + "The Staff Phone cannot be blank: ";
             }
-            //if the Equipment_Description is too long
-            if (staff_Phone.Length > 50)
+            //if the Staff_Phone is too long
+            if (staff_Phone.Length > 11)
             {
                 //record the error
                 Error = Error + "The Staff Phone must be less than 50 characters: ";

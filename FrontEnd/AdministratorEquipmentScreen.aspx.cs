@@ -89,5 +89,57 @@ namespace FrontEnd
                 lblError.Text = "Please select a record to edit from the list";
             }
         }
+
+        protected void btnSearchForEquipment_Click(object sender, EventArgs e)
+        {
+            //display only equipment matching the text in the search text box
+            DisplayEquipment(txtFilterByEquipmentName.Text);
+        }
+
+        Int32 DisplayEquipment(string EquipmentFilter)
+        {
+            //var to store the primary key
+            Int32 Equipment_ID;
+            //var to store the Equipment_Name
+            string Equipment_Name;
+            //var to store the Equipment_Description
+            string Equipment_Description;
+            //create an instance of the equipment collecion
+            clsEquipmentCollection Equipment = new clsEquipmentCollection();
+            Equipment.FilterByEquipment_Name(EquipmentFilter);
+            //var to store the count of records
+            Int32 RecordCount;
+            //var to store the index for the loop
+            Int32 Index = 0;
+            //get the count of records
+            RecordCount = Equipment.Count;
+            //clear the list box
+            lstEquipment.Items.Clear();
+            //while there are records to process
+            while (Index < RecordCount)
+            {
+                //get the primary key
+                Equipment_ID = Equipment.EquipmentList[Index].Equipment_ID;
+                //get the Equipment_Name
+                Equipment_Name = Equipment.EquipmentList[Index].Equipment_Name;
+                //get the Equipment_Description
+                Equipment_Description = Equipment.EquipmentList[Index].Equipment_Description;
+                //create an entry for the list box
+                //create a new entry for the list box
+                ListItem NewEntry = new ListItem(Equipment_Name + " " + Equipment_Description, Equipment_ID.ToString());
+                //add the equipment to the list 
+                lstEquipment.Items.Add(NewEntry);
+                //move the index to the next record
+                Index++;
+            }
+            //return the count of records found
+            return RecordCount;
+        }
+
+        protected void btnDisplayAll_Click(object sender, EventArgs e)
+        {
+            //display all Equipment
+            DisplayEquipment("");
+        }
     }
 }

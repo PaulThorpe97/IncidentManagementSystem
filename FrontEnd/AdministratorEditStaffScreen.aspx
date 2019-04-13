@@ -4,32 +4,29 @@
         <strong><em>Edit Staff Screen</em></strong></p>
     <hr />
     <br />
-    <span style="color: #CC0000">*</span>Allocated Role ID:
-    <asp:TextBox ID="txtEditAllocatedRoleID" runat="server"></asp:TextBox>
+    <div align="center">
+    &nbsp;Role ID:
+    <asp:TextBox ID="txtEditStaffRoleID" runat="server"></asp:TextBox>
     <br />
     <br />
     <span style="color: #CC0000">*</span>Surname:
-    <asp:TextBox ID="txtEditSurname" runat="server"></asp:TextBox>
+    <asp:TextBox ID="txtEditStaffSurname" runat="server"></asp:TextBox>
     <br />
     <br />
     <span style="color: #CC0000">*</span>Forname:
-    <asp:TextBox ID="txtEditForname" runat="server"></asp:TextBox>
+    <asp:TextBox ID="txtEditStaffForename" runat="server"></asp:TextBox>
     <br />
     <br />
     <span style="color: #CC0000">*</span>Phone:
-    <asp:TextBox ID="txtEditPhone" runat="server"></asp:TextBox>
+    <asp:TextBox ID="txtEditStaffPhone" runat="server"></asp:TextBox>
     <br />
     <br />
-    <span style="color: #CC0000">*</span>Email:
-    <asp:TextBox ID="txtEditEmail" runat="server"></asp:TextBox>
-    <br />
-    <br />
-    <span style="color: #CC0000">*</span>Password:
-    <asp:TextBox ID="txtEditPassword" runat="server"></asp:TextBox>
-    <br />
+        <asp:Label ID="lblError" runat="server" style="font-weight: 700" Text="[lblError]"></asp:Label>
+        <br />
     <br />
     <strong>
-    <asp:Button ID="btnEditStaff" runat="server" style="font-weight: bold" Text="Edit Staff Member" />
-    <asp:Button ID="btnEditStaffCancel" runat="server" style="font-weight: bold" Text="Cancel" />
+    <asp:Button ID="btnEditStaff" runat="server" style="font-weight: bold" Text="Edit Staff Member" OnClick="btnEditStaff_Click" />
+    <asp:Button ID="btnEditStaffCancel" runat="server" style="font-weight: bold" Text="Cancel" OnClick="btnEditStaffCancel_Click" />
     </strong>
+        </div>
 </asp:Content>

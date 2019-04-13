@@ -87,5 +87,54 @@ namespace FrontEnd
                 lblError.Text = "Please select a record to edit from the list";
             }
         }
+
+        protected void btnSearchForRole_Click(object sender, EventArgs e)
+        {
+            //display only equipment matching the text in the search text box
+            DisplayRole(txtFilterByRoleDescription.Text);
+        }
+        protected void btnDisplayAll_Click(object sender, EventArgs e)
+        {
+            //display all Equipment
+            DisplayRole("");
+        }
+
+        Int32 DisplayRole(string RoleFilter)
+        {
+            //var to store the primary key
+            Int32 Role_ID;
+            //var to store the Equipment_Description
+            string Role_Description;
+            //create an instance of the equipment collecion
+            clsRoleCollection Role = new clsRoleCollection();
+            Role.FilterByRole_Description(RoleFilter);
+            //var to store the count of records
+            Int32 RecordCount;
+            //var to store the index for the loop
+            Int32 Index = 0;
+            //get the count of records
+            RecordCount = Role.Count;
+            //clear the list box
+            lstRole.Items.Clear();
+            //while there are records to process
+            while (Index < RecordCount)
+            {
+                //get the primary key
+                Role_ID = Role.RoleList[Index].Role_ID;
+                //get the Role_Description
+                Role_Description = Role.RoleList[Index].Role_Description;
+                //create an entry for the list box
+                //create a new entry for the list box
+                ListItem NewEntry = new ListItem(Role_Description, Role_ID.ToString());
+                //add the equipment to the list 
+                lstRole.Items.Add(NewEntry);
+                //move the index to the next record
+                Index++;
+            }
+            //return the count of records found
+            return RecordCount;
+        }
+
+       
     }
 }

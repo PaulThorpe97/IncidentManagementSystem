@@ -13,15 +13,6 @@ namespace FrontEnd {
     public partial class AdministratorStaffScreen {
         
         /// <summary>
-        /// btnAddNewStaff control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddNewStaff;
-        
-        /// <summary>
         /// btnLogOut control.
         /// </summary>
         /// <remarks>
@@ -40,6 +31,15 @@ namespace FrontEnd {
         protected global::System.Web.UI.WebControls.ListBox lstStaff;
         
         /// <summary>
+        /// lblError control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblError;
+        
+        /// <summary>
         /// btnDisplayAllStaff control.
         /// </summary>
         /// <remarks>
@@ -49,22 +49,31 @@ namespace FrontEnd {
         protected global::System.Web.UI.WebControls.Button btnDisplayAllStaff;
         
         /// <summary>
-        /// txtFilterByStaffID control.
+        /// txtFilterByStaffSurname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFilterByStaffID;
+        protected global::System.Web.UI.WebControls.TextBox txtFilterByStaffSurname;
         
         /// <summary>
-        /// btnSearchForStaff control.
+        /// btnSearchForStaffSurname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSearchForStaff;
+        protected global::System.Web.UI.WebControls.Button btnSearchForStaffSurname;
+        
+        /// <summary>
+        /// btnAddStaff control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAddStaff;
         
         /// <summary>
         /// btnEditStaffDetails control.

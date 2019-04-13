@@ -3,6 +3,7 @@
     <p style="font-size: x-large; text-decoration: underline">
         <strong><em>Edit Role Screen</em></strong></p>
     <hr />
+    <div align ="center">
     <span style="color: #CC0000">
     <br />
     *</span>Role Description:
@@ -16,4 +17,5 @@
     <asp:Button ID="btnEditRole" runat="server" style="font-weight: bold" Text="Edit Role" OnClick="btnEditRole_Click" />
     <asp:Button ID="btnEditRoleCancel" runat="server" style="font-weight: bold" Text="Cancel" OnClick="btnEditRoleCancel_Click" />
     </strong>
+        </div>
 </asp:Content>

@@ -13,58 +13,49 @@ namespace FrontEnd {
     public partial class AdministratorAddNewStaffScreen {
         
         /// <summary>
-        /// txtAddAllocatedRoleID control.
+        /// txtAddStaffRoleID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAddAllocatedRoleID;
+        protected global::System.Web.UI.WebControls.TextBox txtAddStaffRoleID;
         
         /// <summary>
-        /// txtAddSurname control.
+        /// txtAddStaffSurname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAddSurname;
+        protected global::System.Web.UI.WebControls.TextBox txtAddStaffSurname;
         
         /// <summary>
-        /// txtAddForname control.
+        /// txtAddStaffForename control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAddForname;
+        protected global::System.Web.UI.WebControls.TextBox txtAddStaffForename;
         
         /// <summary>
-        /// txtAddPhone control.
+        /// txtAddStaffPhone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAddPhone;
+        protected global::System.Web.UI.WebControls.TextBox txtAddStaffPhone;
         
         /// <summary>
-        /// txtAddEmail control.
+        /// lblError control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAddEmail;
-        
-        /// <summary>
-        /// txtAddPassword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAddPassword;
+        protected global::System.Web.UI.WebControls.Label lblError;
         
         /// <summary>
         /// btnAddStaff control.

@@ -53,6 +53,8 @@
     <Compile Include="tstEquipmentCollection.cs" />
     <Compile Include="tstRole.cs" />
     <Compile Include="tstRoleCollection.cs" />
+    <Compile Include="tstStaff.cs" />
+    <Compile Include="tstStaffCollection.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

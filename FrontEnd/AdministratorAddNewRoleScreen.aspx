@@ -3,6 +3,7 @@
     <p style="font-size: x-large; text-decoration: underline">
         <strong><em>Add New Role Screen</em></strong></p>
     <hr />
+        <div align ="center">
     <br /><span style="color: #CC0000">*</span>Role Description:
     <asp:TextBox ID="txtAddRoleDescription" runat="server"></asp:TextBox>
     <br />
@@ -14,4 +15,5 @@
     <asp:Button ID="btnAddRole" runat="server" style="font-weight: bold" Text="Add Role" OnClick="btnAddRole_Click" />
     <asp:Button ID="btnAddRoleCancel" runat="server" style="font-weight: bold" Text="Cancel" OnClick="btnAddRoleCancel_Click" />
     </strong>
+            </div>
 </asp:Content>

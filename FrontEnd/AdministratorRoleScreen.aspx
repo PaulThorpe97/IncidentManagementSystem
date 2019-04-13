@@ -19,11 +19,15 @@
         <br />
         </em>
         <asp:Label ID="lblError" runat="server" style="font-weight: 700" Text="[lblError]"></asp:Label>
-        <span style="text-decoration: underline"><em>
+    </p>
+        <p>
+            Display<em> all:&nbsp;
+            <asp:Button ID="btnDisplayAll" runat="server" OnClick="btnDisplayAll_Click" style="font-weight: 700" Text="Display All" />
+            <span style="text-decoration: underline">
         <br />
-        <br /></em></span>Filter by Role ID:<strong> <em><span style="text-decoration: underline">
-        <asp:TextBox ID="txtFilterByRoleID" runat="server"></asp:TextBox>
-        </span></em></strong>&nbsp;<strong><em><span style="text-decoration: underline"><asp:Button ID="btnSearchForRole" runat="server" Text="Search for role" style="font-weight: bold" />
+        <br /></span></em>Filter by Role Description:<strong> <em><span style="text-decoration: underline">
+        <asp:TextBox ID="txtFilterByRoleDescription" runat="server"></asp:TextBox>
+        </span></em></strong>&nbsp;<strong><em><span style="text-decoration: underline"><asp:Button ID="btnSearchForRole" runat="server" Text="Search for role" style="font-weight: bold" OnClick="btnSearchForRole_Click" />
         </span></em></strong>
     </p>
     <p>

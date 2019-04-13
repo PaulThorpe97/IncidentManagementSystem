@@ -4,9 +4,11 @@
         <strong><em>Delete Role Screen </em></strong>
     </p>
     <hr />
+    <div align ="center">
     <br />Are you sure you wish to delete this Role?<br />
     <br /><strong>
     <asp:Button ID="btnDeleteRoleYes" runat="server" style="font-weight: bold" Text="Yes" OnClick="btnDeleteRoleYes_Click" />
     <asp:Button ID="btnDeleteRoleNo" runat="server" style="font-weight: bold" Text="No" OnClick="btnDeleteRoleNo_Click" />
     </strong>
+        </div>
 </asp:Content>
