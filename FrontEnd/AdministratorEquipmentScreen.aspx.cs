@@ -141,5 +141,10 @@ namespace FrontEnd
             //display all Equipment
             DisplayEquipment("");
         }
+
+        protected void lstEquipment_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

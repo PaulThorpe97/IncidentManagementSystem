@@ -51,6 +51,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tstEquipment.cs" />
     <Compile Include="tstEquipmentCollection.cs" />
+    <Compile Include="tstIncident.cs" />
+    <Compile Include="tstIncidentCollection.cs" />
     <Compile Include="tstRole.cs" />
     <Compile Include="tstRoleCollection.cs" />
     <Compile Include="tstStaff.cs" />

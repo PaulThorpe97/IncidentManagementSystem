@@ -2,36 +2,32 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
         <span style="text-decoration: underline; font-size: x-large;"><strong><em>Edit Incident Screen</em></strong></span><span style="font-size: x-large;">&nbsp;&nbsp;&nbsp;&nbsp; </span>
-    <asp:Button ID="btnEditSave" runat="server" style="font-weight: bold" Text="Save" />
-    <asp:Button ID="btnEditCancel" runat="server" style="font-weight: bold" Text="Cancel" />
+    <asp:Button ID="btnEditIncident" runat="server" style="font-weight: bold" Text="Edit Incident" OnClick="btnEditEquipment_Click" />
+    <asp:Button ID="btnEditCancel" runat="server" style="font-weight: bold" Text="Cancel" OnClick="btnEditCancel_Click" />
         &nbsp;&nbsp;&nbsp;&nbsp;
         </p>
+    <div align="center">
+    <asp:Label ID="lblError" runat="server" style="font-weight: 700" Text="[lblError]"></asp:Label>
+        </div>
     <hr>
+    <div align="center">
     <p>
-        <span style="color: #000000">Incident ID:</span><span style="color: #CC0000">
-        <asp:TextBox ID="txtEditIncidentID" runat="server"></asp:TextBox>
+        <span style="color: #CC0000">
         *</span>Staff ID:&nbsp;
         <asp:TextBox ID="txtEditStaffID" runat="server"></asp:TextBox>
     &nbsp;&nbsp;&nbsp;&nbsp;
         Assign Incident to: 
         <asp:TextBox ID="txtEditAssignIncidentTo" runat="server"></asp:TextBox>
-        <span style="color: #CC0000">&nbsp;&nbsp;&nbsp;&nbsp; *</span>Logged by: 
-        <asp:TextBox ID="txtEditLoggedBy" runat="server"></asp:TextBox>
-        <span style="color: #CC0000">&nbsp;&nbsp;&nbsp;&nbsp; *</span>Date of Occurrence:
-        <asp:TextBox ID="txtEditDateOfOccurrence" runat="server"></asp:TextBox>
+        <span style="color: #CC0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *</span>Date Occured:
+        <asp:TextBox ID="txtEditIncidentDateOccured" runat="server"></asp:TextBox>
     </p>
     <p>
         &nbsp;</p>
     <hr>
     <p>
-        <span style="color: #CC0000">*</span>Equipment Name:
-        <asp:TextBox ID="btnEditEquipmentName" runat="server"></asp:TextBox>
-    &nbsp;&nbsp;&nbsp;&nbsp;
-        Hardware:
-        <asp:CheckBox ID="chkEditHardware" runat="server" />
-    &nbsp;&nbsp;&nbsp;&nbsp;
-        Software:<asp:CheckBox ID="chkEditSoftware" runat="server" />
-    </p>
+        <span style="color: #CC0000">*</span>Equipment ID:
+        <asp:TextBox ID="txtEditEquipmentID" runat="server"></asp:TextBox>
+        &nbsp;&nbsp;&nbsp;&nbsp;</p>
     <p>
         &nbsp;</p>
     <hr>
@@ -77,4 +73,5 @@
     <br />
     <br />
     <asp:ListBox ID="lstCommentHistory" runat="server" Height="125px" Width="1220px"></asp:ListBox>
+        </div>
 </asp:Content>

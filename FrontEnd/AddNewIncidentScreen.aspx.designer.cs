@@ -31,103 +31,85 @@ namespace FrontEnd {
         protected global::System.Web.UI.WebControls.TextBox txtAssignIncidentTo;
         
         /// <summary>
-        /// txtLoggedBy control.
+        /// txtAddIncidentDateOccured control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtLoggedBy;
+        protected global::System.Web.UI.WebControls.TextBox txtAddIncidentDateOccured;
         
         /// <summary>
-        /// txtAddDateOfOccurrence control.
+        /// txtAddEquipmentID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAddDateOfOccurrence;
+        protected global::System.Web.UI.WebControls.TextBox txtAddEquipmentID;
         
         /// <summary>
-        /// txtAddEquipmentName control.
+        /// chkAddHigh control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAddEquipmentName;
+        protected global::System.Web.UI.WebControls.CheckBox chkAddHigh;
         
         /// <summary>
-        /// chkHardware control.
+        /// chkAddMedium control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkHardware;
+        protected global::System.Web.UI.WebControls.CheckBox chkAddMedium;
         
         /// <summary>
-        /// chkSoftware control.
+        /// chkAddLow control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkSoftware;
+        protected global::System.Web.UI.WebControls.CheckBox chkAddLow;
         
         /// <summary>
-        /// chkHigh control.
+        /// chkAddPending control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkHigh;
+        protected global::System.Web.UI.WebControls.CheckBox chkAddPending;
         
         /// <summary>
-        /// chkMedium control.
+        /// chkAddInProgress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkMedium;
+        protected global::System.Web.UI.WebControls.CheckBox chkAddInProgress;
         
         /// <summary>
-        /// chkLow control.
+        /// txtAddIncidentDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkLow;
+        protected global::System.Web.UI.WebControls.TextBox txtAddIncidentDescription;
         
         /// <summary>
-        /// chkPending control.
+        /// lblError control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkPending;
-        
-        /// <summary>
-        /// chkInProgress control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkInProgress;
-        
-        /// <summary>
-        /// txtIncidentDescription control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtIncidentDescription;
+        protected global::System.Web.UI.WebControls.Label lblError;
         
         /// <summary>
         /// btnAddIncident control.

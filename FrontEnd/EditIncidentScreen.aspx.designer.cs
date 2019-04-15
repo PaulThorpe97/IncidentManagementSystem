@@ -13,13 +13,13 @@ namespace FrontEnd {
     public partial class EditIncidentScreen {
         
         /// <summary>
-        /// btnEditSave control.
+        /// btnEditIncident control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEditSave;
+        protected global::System.Web.UI.WebControls.Button btnEditIncident;
         
         /// <summary>
         /// btnEditCancel control.
@@ -31,13 +31,13 @@ namespace FrontEnd {
         protected global::System.Web.UI.WebControls.Button btnEditCancel;
         
         /// <summary>
-        /// txtEditIncidentID control.
+        /// lblError control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEditIncidentID;
+        protected global::System.Web.UI.WebControls.Label lblError;
         
         /// <summary>
         /// txtEditStaffID control.
@@ -58,49 +58,22 @@ namespace FrontEnd {
         protected global::System.Web.UI.WebControls.TextBox txtEditAssignIncidentTo;
         
         /// <summary>
-        /// txtEditLoggedBy control.
+        /// txtEditIncidentDateOccured control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEditLoggedBy;
+        protected global::System.Web.UI.WebControls.TextBox txtEditIncidentDateOccured;
         
         /// <summary>
-        /// txtEditDateOfOccurrence control.
+        /// txtEditEquipmentID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEditDateOfOccurrence;
-        
-        /// <summary>
-        /// btnEditEquipmentName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox btnEditEquipmentName;
-        
-        /// <summary>
-        /// chkEditHardware control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkEditHardware;
-        
-        /// <summary>
-        /// chkEditSoftware control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkEditSoftware;
+        protected global::System.Web.UI.WebControls.TextBox txtEditEquipmentID;
         
         /// <summary>
         /// chkEditHigh control.

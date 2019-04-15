@@ -4,6 +4,7 @@
         <strong><em>Delete Incident Screen </em></strong>
     </p>
     <hr />
+    <div align="center">
     <br />
     Are you sure you wish to delete this incident?<br />
     <br />
@@ -11,4 +12,5 @@
     <asp:Button ID="btnDeleteIncidentYes" runat="server" style="font-weight: bold" Text="Yes" />
     <asp:Button ID="btnDeleteIncidentNo" runat="server" style="font-weight: bold" Text="No" />
     </strong>
+        </div>
 </asp:Content>

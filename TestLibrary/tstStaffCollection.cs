@@ -199,7 +199,7 @@ namespace TestLibrary
             //create an instance of the class we want to create
             clsStaffCollection FilteredStaff = new clsStaffCollection();
             //apply a staff surname that doesnt exist
-            FilteredStaff.FilterByStaff_Surname("Greaves");
+            FilteredStaff.FilterByStaff_Surname("Boothby");
             //test to see that there are no records
             Assert.AreEqual(0, FilteredStaff.Count);
         }
@@ -212,7 +212,7 @@ namespace TestLibrary
             //var to store outcome
             Boolean OK = true;
             //apply the staff surname  that doesn't exist
-            FilteredStaff.FilterByStaff_Surname("Greaves");
+            FilteredStaff.FilterByStaff_Surname("Boothby");
             //check that the correct numnber of records are found
             if (FilteredStaff.Count == 2)
             {

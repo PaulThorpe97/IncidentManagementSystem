@@ -12,7 +12,6 @@ namespace TestLibrary
         String Staff_Forename = "Paul";
         String Staff_Phone = "07592115157";
         String Staff_Surname = "Thorpe";
-        Int32 Role_ID = 1;
 
 
         [TestMethod]

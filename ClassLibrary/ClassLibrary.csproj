@@ -44,6 +44,8 @@
     <Compile Include="clsDataConnection.cs" />
     <Compile Include="clsEquipment.cs" />
     <Compile Include="clsEquipmentCollection.cs" />
+    <Compile Include="clsIncident.cs" />
+    <Compile Include="clsIncidentCollection.cs" />
     <Compile Include="clsRole.cs" />
     <Compile Include="clsRoleCollection.cs" />
     <Compile Include="clsStaff.cs" />
