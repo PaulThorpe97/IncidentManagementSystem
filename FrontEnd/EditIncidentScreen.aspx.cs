@@ -16,16 +16,16 @@ namespace FrontEnd
         //event handler for the page load event
         protected void Page_Load(object sender, EventArgs e)
         {
-            //get the number of the equipment to be processed
+            //get the number of the incident to be processed
             Incident_ID = Convert.ToInt32(Session["Incident_ID"]);
             if (IsPostBack == false)
             {
-                //populate the list of equipment
+                //populate the list of incident
                 DisplayIncident();
                 //if this is not a new record
                 if (Incident_ID != -1)
                 {
-                    //DisplayEquipment the current data for the record
+                    //DisplayIncident the current data for the record
                     DisplayIncident();
                 }
             }
@@ -42,6 +42,7 @@ namespace FrontEnd
             if (Error == "")
             {
                 //get the data entered by the user
+                AddIncident.ThisIncident.Incident_Assign_Incident_To = Convert.ToInt32(txtEditAssignIncidentTo.Text);
                 AddIncident.ThisIncident.Incident_Date_Occured = Convert.ToDateTime(txtEditIncidentDateOccured.Text);
                 AddIncident.ThisIncident.Equipment_ID = Convert.ToInt32(txtEditEquipmentID.Text);
                 AddIncident.ThisIncident.Incident_Description = txtEditIncidentDescription.Text;
@@ -76,6 +77,7 @@ namespace FrontEnd
                 //find the record to update
                 Incident.ThisIncident.Find(Incident_ID);
                 //get the data entered by the user
+                Incident.ThisIncident.Incident_Assign_Incident_To = Convert.ToInt32(txtEditAssignIncidentTo.Text);
                 Incident.ThisIncident.Incident_Date_Occured = Convert.ToDateTime(txtEditIncidentDateOccured.Text);
                 Incident.ThisIncident.Equipment_ID = Convert.ToInt32(txtEditEquipmentID.Text);
                 Incident.ThisIncident.Incident_Description = txtEditIncidentDescription.Text;
@@ -99,11 +101,12 @@ namespace FrontEnd
 
         void DisplayIncident()
         {
-            //creat an instance of the equipment
+            //creat an instance of the incident
             clsIncidentCollection Incident = new clsIncidentCollection();
             //find the record to update
-            Incident.ThisIncident.Find(Incident_ID);
+             Incident.ThisIncident.Find(Incident_ID);
             //display the data for this record
+            txtEditAssignIncidentTo.Text = Incident.ThisIncident.Incident_Assign_Incident_To.ToString();
             txtEditIncidentDateOccured.Text = Incident.ThisIncident.Incident_Date_Occured.ToString();
             txtEditEquipmentID.Text = Incident.ThisIncident.Equipment_ID.ToString();
             txtEditIncidentDescription.Text = Incident.ThisIncident.Incident_Description;
@@ -134,5 +137,6 @@ namespace FrontEnd
             //direct to home screen
             Response.Redirect("HomeScreen.aspx");
         }
+
     }
 }

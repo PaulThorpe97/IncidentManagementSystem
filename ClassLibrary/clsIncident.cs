@@ -8,6 +8,8 @@ namespace ClassLibrary
 {
     public class clsIncident
     {
+        //private data member for the Incident_Assign_Incident_To
+        private Int32 mIncident_Assign_Incident_To;
         //private data member for the Incident_Date_Occured property
         private DateTime mIncident_Date_Occured;
         //private data member for the Equipment_ID property
@@ -28,6 +30,21 @@ namespace ClassLibrary
         private Boolean mIncident_Pending;
         //private data member for the Staff_ID property
         private Int32 mStaff_ID;
+
+        //public property for Incident_Date_Occured
+        public Int32 Incident_Assign_Incident_To
+        {
+            get
+            {
+                //return the private data
+                return mIncident_Assign_Incident_To;
+            }
+            set
+            {
+                //set the value of the private data member
+                mIncident_Assign_Incident_To = value;
+            }
+        }
 
         //public property for Incident_Date_Occured
         public DateTime Incident_Date_Occured
@@ -183,7 +200,7 @@ namespace ClassLibrary
         }
 
 
-        public bool Find(int Equipment_ID)
+        public bool Find(int Incident_ID)
         {
             //create an instance of the data connection
             clsDataConnection DB = new clsDataConnection();
@@ -195,6 +212,7 @@ namespace ClassLibrary
             if (DB.Count == 1)
             {
                 //copy the data from the database to the private data members
+                mIncident_Assign_Incident_To = Convert.ToInt32(DB.DataTable.Rows[0]["Incident_Assign_Incident_To"]);
                 mIncident_Date_Occured = Convert.ToDateTime(DB.DataTable.Rows[0]["Incident_Date_Occured"]);
                 mEquipment_ID = Convert.ToInt32(DB.DataTable.Rows[0]["Equipment_ID"]);
                 mIncident_Description = Convert.ToString(DB.DataTable.Rows[0]["Incident_Description"]);

@@ -29,6 +29,7 @@ namespace TestLibrary
             //create the item of test data
             clsIncident TestItem = new clsIncident();
             //set its properties
+            TestItem.Incident_Assign_Incident_To = 1;
             TestItem.Incident_Date_Occured = DateTime.Now.Date;
             TestItem.Equipment_ID = 1;
             TestItem.Incident_Description = "Microsoft Word keeps crashing";
@@ -55,6 +56,7 @@ namespace TestLibrary
             //create some test data to assign to the property
             clsIncident TestIncident = new clsIncident();
             //set the properties of the test object
+            TestIncident.Incident_Assign_Incident_To = 1;
             TestIncident.Incident_Date_Occured = DateTime.Now.Date;
             TestIncident.Equipment_ID = 1;
             TestIncident.Incident_Description = "Microsoft Word keeps crashing";
@@ -83,6 +85,7 @@ namespace TestLibrary
             //create the item of test data
             clsIncident TestItem = new clsIncident();
             //set its properties
+            TestItem.Incident_Assign_Incident_To = 1;
             TestItem.Incident_Date_Occured = DateTime.Now.Date;
             TestItem.Equipment_ID = 1;
             TestItem.Incident_Description = "Microsoft Word keeps crashing";
@@ -111,6 +114,7 @@ namespace TestLibrary
             //var to store the primary key
             Int32 PrimaryKey = 0;
             //set its properties
+            TestItem.Incident_Assign_Incident_To = 1;
             TestItem.Incident_Date_Occured = DateTime.Now.Date;
             TestItem.Equipment_ID = 1;
             TestItem.Incident_Description = "Microsoft Word keeps crashing";
@@ -143,6 +147,7 @@ namespace TestLibrary
             //var to store the primary key
             Int32 PrimaryKey = 0;
             //set its properties
+            TestItem.Incident_Assign_Incident_To = 1;
             TestItem.Incident_Date_Occured = DateTime.Now.Date;
             TestItem.Equipment_ID = 1;
             TestItem.Incident_Description = "Microsoft Word keeps crashing";
@@ -179,6 +184,7 @@ namespace TestLibrary
             //var to store the primary key
             Int32 PrimaryKey = 0;
             //set its properties
+            TestItem.Incident_Assign_Incident_To = 1;
             TestItem.Incident_Date_Occured = DateTime.Now.Date;
             TestItem.Equipment_ID = 1;
             TestItem.Incident_Description = "Microsoft Word keeps crashing";
@@ -195,6 +201,7 @@ namespace TestLibrary
             //set the primary key of the test data
             TestItem.Equipment_ID = PrimaryKey;
             //modify the test data
+            TestItem.Incident_Assign_Incident_To = 2;
             TestItem.Incident_Date_Occured = DateTime.Now.Date;
             TestItem.Equipment_ID = 1;
             TestItem.Incident_Description = "Microsoft Word keeps crashing";

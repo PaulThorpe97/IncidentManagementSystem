@@ -25,6 +25,7 @@ namespace FrontEnd
             if (Error == "")
             {
                 //get the data entered by the user
+                AddIncident.ThisIncident.Incident_Assign_Incident_To = Convert.ToInt32(txtAssignIncidentTo.Text);
                 AddIncident.ThisIncident.Incident_Date_Occured = Convert.ToDateTime(txtAddIncidentDateOccured.Text);
                 AddIncident.ThisIncident.Equipment_ID = Convert.ToInt32(txtAddEquipmentID.Text);
                 AddIncident.ThisIncident.Incident_Description= txtAddIncidentDescription.Text;

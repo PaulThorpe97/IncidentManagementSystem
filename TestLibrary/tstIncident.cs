@@ -22,6 +22,19 @@ namespace TestLibrary
         }
 
         [TestMethod]
+        public void Incident_Assign_Incident_ToOK()
+        {
+            //create an instance of the class we want to create
+            clsIncident AIncident = new clsIncident();
+            //create some test data to assign to the property
+            Int32 TestData = 1;
+            //assign the data to the property
+            AIncident.Incident_Assign_Incident_To = TestData;
+            //test to see that the two values are the same
+            Assert.AreEqual(AIncident.Incident_Assign_Incident_To, TestData);
+        }
+
+        [TestMethod]
         public void Incident_Date_OccuredOK()
         {
             //create an instance of the class we want to create
@@ -164,6 +177,28 @@ namespace TestLibrary
             Found = AIncident.Find(Incident_ID);
             //test to see that the result is correct
             Assert.IsTrue(Found);
+        }
+        
+         [TestMethod]
+        public void Incident_Assign_Incident_ToFound()
+        {
+            //create an instance of the class we want to create
+            clsIncident AIncident = new clsIncident();
+            //boolean variable to store the result of the validation
+            Boolean Found = false;
+            //boolean variable to record if data is ok (assume it is)
+            Boolean OK = true;
+            //create some test data to use with the method
+            Int32 Incident_ID = 1;
+            //invoke the method
+            Found = AIncident.Find(Incident_ID);
+            //check the Incident_Date_Occured
+            if (AIncident.Incident_Assign_Incident_To != 1)
+            {
+                OK = false;
+            }
+            //test to see that the result is correct
+            Assert.IsTrue(OK);
         }
 
         [TestMethod]

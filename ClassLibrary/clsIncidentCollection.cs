@@ -72,6 +72,7 @@ namespace ClassLibrary
             //conect to the database
             clsDataConnection DB = new clsDataConnection();
             //set the parameters for the stored procedure
+            DB.AddParameter("@Incident_Assign_Incident_To", mThisIncident.Incident_Assign_Incident_To);
             DB.AddParameter("@Incident_Date_Occured", mThisIncident.Incident_Date_Occured);
             DB.AddParameter("@Equipment_ID", mThisIncident.Equipment_ID);
             DB.AddParameter("@Incident_Description", mThisIncident.Incident_Description);
@@ -102,6 +103,7 @@ namespace ClassLibrary
             //Connect to the database
             clsDataConnection DB = new clsDataConnection();
             //set the parameters for the stored procedure
+            DB.AddParameter("@Incident_Assign_Incident_To", mThisIncident.Incident_Assign_Incident_To);
             DB.AddParameter("@Incident_Date_Occured", mThisIncident.Incident_Date_Occured);
             DB.AddParameter("@Equipment_ID", mThisIncident.Equipment_ID);
             DB.AddParameter("@Incident_Description", mThisIncident.Incident_Description);
@@ -147,6 +149,7 @@ namespace ClassLibrary
                 //create a blank equipment
                 clsIncident AnIncident = new clsIncident();
                 //read in the fields from the current record
+                AnIncident.Incident_Assign_Incident_To = Convert.ToInt32(DB.DataTable.Rows[Index]["Incident_Assign_Incident_To"]);
                 AnIncident.Incident_Date_Occured = Convert.ToDateTime(DB.DataTable.Rows[Index]["Incident_Date_Occured"]);
                 AnIncident.Equipment_ID = Convert.ToInt32(DB.DataTable.Rows[Index]["Equipment_ID"]);
                 AnIncident.Incident_Description = Convert.ToString(DB.DataTable.Rows[Index]["Incident_Description"]);

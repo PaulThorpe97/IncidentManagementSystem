@@ -10,7 +10,7 @@
 namespace FrontEnd {
     
     
-    public partial class HomeScreen {
+    public partial class AdministratorIncidentScreen {
         
         /// <summary>
         /// btnSearhForClosedIncidents control.
@@ -83,6 +83,15 @@ namespace FrontEnd {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnEditIncidentDetails;
+        
+        /// <summary>
+        /// btnDeleteIncidentDetails control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnDeleteIncidentDetails;
         
         /// <summary>
         /// btnCloseIncident control.
