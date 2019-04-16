@@ -79,6 +79,7 @@
     <Content Include="AdministratorEditStaffScreen.aspx" />
     <Content Include="AdministratorEquipmentScreen.aspx" />
     <Content Include="AdministratorHomeScreen.aspx" />
+    <Content Include="AdministratorIncidentScreen.aspx" />
     <Content Include="AdministratorRoleScreen.aspx" />
     <Content Include="AdministratorStaffScreen.aspx" />
     <Content Include="ClosedIncidentsHomeScreen.aspx" />
@@ -176,6 +177,13 @@
     </Compile>
     <Compile Include="AdministratorHomeScreen.aspx.designer.cs">
       <DependentUpon>AdministratorHomeScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorIncidentScreen.aspx.cs">
+      <DependentUpon>AdministratorIncidentScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorIncidentScreen.aspx.designer.cs">
+      <DependentUpon>AdministratorIncidentScreen.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdministratorRoleScreen.aspx.cs">
       <DependentUpon>AdministratorRoleScreen.aspx</DependentUpon>

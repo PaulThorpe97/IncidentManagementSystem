@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Default.Master" AutoEventWireup="true" CodeBehind="HomeScreen.aspx.cs" Inherits="FrontEnd.HomeScreen" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Default.Master" AutoEventWireup="true" CodeBehind="AdministratorIncidentScreen.aspx.cs" Inherits="FrontEnd.AdministratorIncidentScreen" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <p>
+ <p>
         <span style="font-size: x-large">&nbsp;</span><strong><span style="text-decoration: underline; font-size: x-large;"><em>Home Screen</em></span><span style="font-weight: normal">&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="text-decoration: underline">
     <asp:Button ID="btnSearhForClosedIncidents" runat="server" Text="Search For Closed Incidents" style="font-weight: bold; " />
         </span><asp:Button ID="btnLogOut" runat="server" Text="Log Out" style="text-align: left; font-weight: bold; " />
@@ -54,9 +54,13 @@
     </em>
     </strong>Edit incident details: <em><span style="text-decoration: underline"><strong>
     <asp:Button ID="btnEditIncidentDetails" runat="server" style="font-weight: bold" Text="Edit" OnClick="btnEditIncidentDetails_Click" />
+    <br />
     </strong>
+    <br />
     </span>
-    </em>
+    </em>Delete incident details: <strong>
+    <asp:Button ID="btnDeleteIncidentDetails" runat="server" style="font-weight: bold; margin-bottom: 0px" Text="Delete" OnClick="btnDeleteIncidentDetails_Click" />
+    </strong>
     </p>
         <p>
 
@@ -68,3 +72,4 @@
     <br />
         </div>
     </asp:Content>
+

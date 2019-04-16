@@ -9,8 +9,8 @@
     Are you sure you wish to delete this incident?<br />
     <br />
     <strong>
-    <asp:Button ID="btnDeleteIncidentYes" runat="server" style="font-weight: bold" Text="Yes" />
-    <asp:Button ID="btnDeleteIncidentNo" runat="server" style="font-weight: bold" Text="No" />
+    <asp:Button ID="btnDeleteIncidentYes" runat="server" style="font-weight: bold" Text="Yes" OnClick="btnDeleteIncidentYes_Click" />
+    <asp:Button ID="btnDeleteIncidentNo" runat="server" style="font-weight: bold" Text="No" OnClick="btnDeleteIncidentNo_Click" />
     </strong>
         </div>
 </asp:Content>
