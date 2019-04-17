@@ -84,7 +84,7 @@ namespace TestLibrary
         }
 
         [TestMethod]
-        public void AddMethodOK()
+        public void PointOfContactAddMethodOK()
         {
             //create an instance of the class we want to create
             clsPointOfContactCollection AllPointOfContact = new clsPointOfContactCollection();
@@ -100,7 +100,7 @@ namespace TestLibrary
             //set ThisPointOfContact to the test data
             AllPointOfContact.ThisPointOfContact = TestItem;
             //add the record
-            PrimaryKey = AllPointOfContact.Add();
+            PrimaryKey = AllPointOfContact.PointOfContactAdd();
             //set the primary key of the test data
             TestItem.Point_Of_Contact_ID = PrimaryKey;
             //find the record
@@ -110,7 +110,7 @@ namespace TestLibrary
         }
 
         [TestMethod]
-        public void DeleteMethodOK()
+        public void PointOfContactDeleteMethodOK()
         {
             //create an instance of the class we want to create
             clsPointOfContactCollection AllPointOfContact = new clsPointOfContactCollection();
@@ -126,13 +126,13 @@ namespace TestLibrary
             //set ThisPointOfContact to the test data
             AllPointOfContact.ThisPointOfContact = TestItem;
             //add the record
-            PrimaryKey = AllPointOfContact.Add();
+            PrimaryKey = AllPointOfContact.PointOfContactAdd();
             //set the primary key of the test data
             TestItem.Point_Of_Contact_ID = PrimaryKey;
             //find the record
             AllPointOfContact.ThisPointOfContact.Find(PrimaryKey);
             //delete the record
-            AllPointOfContact.Delete();
+            AllPointOfContact.PointOfContactDelete();
             //now find the record
             Boolean Found = AllPointOfContact.ThisPointOfContact.Find(PrimaryKey);
             //test to see that the record was not found
@@ -140,7 +140,7 @@ namespace TestLibrary
         }
 
         [TestMethod]
-        public void UpdateMethodOK()
+        public void PointOfContactUpdateMethodOK()
         {
             //create an instance of the class we want to create
             clsPointOfContactCollection AllPointOfContact = new clsPointOfContactCollection();
@@ -155,7 +155,7 @@ namespace TestLibrary
             //set ThisEquipment to the test data
             AllPointOfContact.ThisPointOfContact = TestItem;
             //add the record
-            PrimaryKey = AllPointOfContact.Add();
+            PrimaryKey = AllPointOfContact.PointOfContactAdd();
             //set the primary key of the test data
             TestItem.Point_Of_Contact_ID = PrimaryKey;
             //modify the test data
@@ -165,7 +165,7 @@ namespace TestLibrary
             //set the record based on the new test data
             AllPointOfContact.ThisPointOfContact = TestItem;
             //update the record
-            AllPointOfContact.Update();
+            AllPointOfContact.PointOfContactUpdate();
             //find the record
             AllPointOfContact.ThisPointOfContact.Find(PrimaryKey);
             //test to see ThisEquipment matches the test data

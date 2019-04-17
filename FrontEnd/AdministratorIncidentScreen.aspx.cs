@@ -57,7 +57,7 @@ namespace FrontEnd
                 //store the data in the session object
                 Session["Incident_ID"] = Incident_ID;
                 //redirect to the edit page
-                Response.Redirect("EditIncidentScreen.aspx");
+                Response.Redirect("AdministratorEditIncidentScreen.aspx");
             }
             else //if no record has been selected 
             {

@@ -65,7 +65,6 @@ namespace FrontEnd
                 //display an error
                 lblError.Text = "Please select a record to delete from the list";
             }
-
         }
 
         //Event Handler for the edit button

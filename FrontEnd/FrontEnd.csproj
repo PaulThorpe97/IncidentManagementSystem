@@ -71,10 +71,13 @@
     <Content Include="AdministratorAddNewEquipmentScreen.aspx" />
     <Content Include="AdministratorAddNewRoleScreen.aspx" />
     <Content Include="AdministratorAddNewStaffScreen.aspx" />
+    <Content Include="AdministratorDeleteCommentScreen.aspx" />
     <Content Include="AdministratorDeleteEquipmentScreen.aspx" />
     <Content Include="AdministratorDeleteRoleScreen.aspx" />
     <Content Include="AdministratorDeleteStaffScreen.aspx" />
+    <Content Include="AdministratorEditCommentScreen.aspx" />
     <Content Include="AdministratorEditEquipmentScreen.aspx" />
+    <Content Include="AdministratorEditIncidentScreen.aspx" />
     <Content Include="AdministratorEditRoleScreen.aspx" />
     <Content Include="AdministratorEditStaffScreen.aspx" />
     <Content Include="AdministratorEquipmentScreen.aspx" />
@@ -122,6 +125,13 @@
     <Compile Include="AdministratorAddNewStaffScreen.aspx.designer.cs">
       <DependentUpon>AdministratorAddNewStaffScreen.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdministratorDeleteCommentScreen.aspx.cs">
+      <DependentUpon>AdministratorDeleteCommentScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorDeleteCommentScreen.aspx.designer.cs">
+      <DependentUpon>AdministratorDeleteCommentScreen.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdministratorDeleteEquipmentScreen.aspx.cs">
       <DependentUpon>AdministratorDeleteEquipmentScreen.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -143,12 +153,26 @@
     <Compile Include="AdministratorDeleteStaffScreen.aspx.designer.cs">
       <DependentUpon>AdministratorDeleteStaffScreen.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdministratorEditCommentScreen.aspx.cs">
+      <DependentUpon>AdministratorEditCommentScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorEditCommentScreen.aspx.designer.cs">
+      <DependentUpon>AdministratorEditCommentScreen.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdministratorEditEquipmentScreen.aspx.cs">
       <DependentUpon>AdministratorEditEquipmentScreen.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AdministratorEditEquipmentScreen.aspx.designer.cs">
       <DependentUpon>AdministratorEditEquipmentScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorEditIncidentScreen.aspx.cs">
+      <DependentUpon>AdministratorEditIncidentScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorEditIncidentScreen.aspx.designer.cs">
+      <DependentUpon>AdministratorEditIncidentScreen.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdministratorEditRoleScreen.aspx.cs">
       <DependentUpon>AdministratorEditRoleScreen.aspx</DependentUpon>

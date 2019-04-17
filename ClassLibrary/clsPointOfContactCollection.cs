@@ -66,7 +66,7 @@ namespace ClassLibrary
             PopulateArray(DB);
         }
 
-        public int Add()
+        public int PointOfContactAdd()
         {
             //adds a new record to the database based on the values of ThisPointOfContact
             //conect to the database
@@ -79,7 +79,7 @@ namespace ClassLibrary
             return DB.Execute("sproc_tbl_Point_Of_Contact_Insert");
         }
 
-        public void Delete()
+        public void PointOfContactDelete()
         {
             //deletes the record pointed to by ThisPointOfContact
             //connect to the database
@@ -90,7 +90,7 @@ namespace ClassLibrary
             DB.Execute("sproc_tbl_Point_Of_Contact_Delete");
         }
 
-        public void Update()
+        public void PointOfContactUpdate()
         {
             //update an existing record based on the values of ThisPointOfContact
             //Connect to the database

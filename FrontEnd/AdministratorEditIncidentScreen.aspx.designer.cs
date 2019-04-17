@@ -10,7 +10,7 @@
 namespace FrontEnd {
     
     
-    public partial class EditIncidentScreen {
+    public partial class AdministratorEditIncidentScreen {
         
         /// <summary>
         /// btnEditIncident control.
@@ -40,13 +40,13 @@ namespace FrontEnd {
         protected global::System.Web.UI.WebControls.Label lblError;
         
         /// <summary>
-        /// txtIncidentID control.
+        /// txtEditIncidentID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtIncidentID;
+        protected global::System.Web.UI.WebControls.TextBox txtEditIncidentID;
         
         /// <summary>
         /// txtEditStaffID control.
@@ -166,22 +166,13 @@ namespace FrontEnd {
         protected global::System.Web.UI.WebControls.TextBox txtComment;
         
         /// <summary>
-        /// btnCommentsAdd control.
+        /// btnCommentAdd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCommentsAdd;
-        
-        /// <summary>
-        /// btnCommentsCancel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCommentsCancel;
+        protected global::System.Web.UI.WebControls.Button btnCommentAdd;
         
         /// <summary>
         /// btnDisplayComments control.
@@ -200,6 +191,15 @@ namespace FrontEnd {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnEditComment;
+        
+        /// <summary>
+        /// btnDeleteComment control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnDeleteComment;
         
         /// <summary>
         /// lstComment control.

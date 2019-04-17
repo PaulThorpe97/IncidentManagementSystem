@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Default.Master" AutoEventWireup="true" CodeBehind="EditIncidentScreen.aspx.cs" Inherits="FrontEnd.EditIncidentScreen" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Default.Master" AutoEventWireup="true" CodeBehind="AdministratorEditIncidentScreen.aspx.cs" Inherits="FrontEnd.AdministratorEditIncidentScreen" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-       <p>
+     <p>
         <span style="text-decoration: underline; font-size: x-large;"><strong><em>Edit Incident Screen</em></strong></span><span style="font-size: x-large;">&nbsp;&nbsp;&nbsp;&nbsp; </span>
     <asp:Button ID="btnEditIncident" runat="server" style="font-weight: bold" Text="Edit Incident"/>
     <asp:Button ID="btnEditCancel" runat="server" style="font-weight: bold" Text="Cancel"/>
@@ -14,7 +14,7 @@
     <p>
         <span style="color: #CC0000">
         *<span style="color: #000000">Incident ID:</span>
-        <asp:TextBox ID="txtIncidentID" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtEditIncidentID" runat="server"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         *</span>Staff ID:&nbsp;
         <asp:TextBox ID="txtEditStaffID" runat="server"></asp:TextBox>
@@ -65,16 +65,17 @@
     <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <asp:TextBox ID="txtComment" runat="server" Width="782px"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;
-    <asp:Button ID="btnCommentsAdd" runat="server" style="font-weight: bold" Text="Add" />
-    <asp:Button ID="btnCommentsCancel" runat="server" style="font-weight: bold" Text="Cancel" />
+    <asp:Button ID="btnCommentAdd" runat="server" style="font-weight: bold" Text="Add" OnClick="btnCommentAdd_Click"/>
     <br />
     <br />
     </strong>Display Comment History:
     <asp:Button ID="btnDisplayComments" runat="server" Text="Display Comments" style="font-weight: 700" />
         &nbsp;&nbsp;&nbsp;&nbsp;
         Edit Comment: <strong>
-        <asp:Button ID="btnEditComment" runat="server" style="font-weight: bold" Text="Edit " />
-&nbsp;&nbsp;&nbsp; <br />
+        <asp:Button ID="btnEditComment" runat="server" style="font-weight: bold" Text="Edit " OnClick="btnEditComment_Click" />
+&nbsp;&nbsp;&nbsp; </strong>Delete Comment:
+        <asp:Button ID="btnDeleteComment" runat="server" style="font-weight: 700" Text="Delete" OnClick="btnDeleteComment_Click"/>
+&nbsp;<strong><br />
     <br />
     <asp:ListBox ID="lstComment" runat="server" Height="183px" Width="1220px" style="font-weight: bold"></asp:ListBox>
         </strong>
