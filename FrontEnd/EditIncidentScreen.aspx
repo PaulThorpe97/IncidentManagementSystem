@@ -72,6 +72,6 @@
     <asp:Button ID="btnDisplayComments" runat="server" Text="Display Comments" />
     <br />
     <br />
-    <asp:ListBox ID="lstCommentHistory" runat="server" Height="125px" Width="1220px"></asp:ListBox>
+    <asp:ListBox ID="lstComment" runat="server" Height="125px" Width="1220px"></asp:ListBox>
         </div>
 </asp:Content>

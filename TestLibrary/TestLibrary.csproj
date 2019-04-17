@@ -53,6 +53,8 @@
     <Compile Include="tstEquipmentCollection.cs" />
     <Compile Include="tstIncident.cs" />
     <Compile Include="tstIncidentCollection.cs" />
+    <Compile Include="tstPointOfContact.cs" />
+    <Compile Include="tstPointOfContactCollection.cs" />
     <Compile Include="tstRole.cs" />
     <Compile Include="tstRoleCollection.cs" />
     <Compile Include="tstStaff.cs" />

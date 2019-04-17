@@ -46,6 +46,8 @@
     <Compile Include="clsEquipmentCollection.cs" />
     <Compile Include="clsIncident.cs" />
     <Compile Include="clsIncidentCollection.cs" />
+    <Compile Include="clsPointOfContact.cs" />
+    <Compile Include="clsPointOfContactCollection.cs" />
     <Compile Include="clsRole.cs" />
     <Compile Include="clsRoleCollection.cs" />
     <Compile Include="clsStaff.cs" />
