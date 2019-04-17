@@ -30,29 +30,6 @@ namespace FrontEnd
                     DisplayIncident();
                 }
             }
-
-            //if this is the first ime the page is displayed
-            if (IsPostBack == false)
-            {
-                //update the list box
-                DisplayPointOfContact();
-            }
-        }
-
-        void DisplayPointOfContact()
-        {
-            //create an instance of the Incident collecion
-            clsPointOfContactCollection PointOfContact = new clsPointOfContactCollection();
-            //set the data source to the list of the Incident in the collection
-            lstComment.DataSource = PointOfContact.PointOfContactList;
-            //set the name of the primary key
-            lstComment.DataValueField = "Point_Of_Contact_ID";
-            //set the data field to display
-            lstComment.DataTextField = "Staff_ID";
-            //set the data field to display
-            lstComment.DataTextField = "Point_Of_Contact_Comment";
-            //bind the data to the list
-            lstComment.DataBind();
         }
 
         //function for adding new records
@@ -263,6 +240,55 @@ namespace FrontEnd
                 //display an error
                 lblError.Text = "Please select a record to edit from the list";
             }
+        }
+
+        protected void btnSearchForComment_Click(object sender, EventArgs e)
+        {
+            //display only equipment matching the text in the  search text box
+            DisplayComment (txtEditIncidentID.Text);
+         }
+        Int32 DisplayComment(string CommentFilter)
+        {
+            //var to store the primary key
+            Int32 Point_Of_Contact_ID;
+            //var to store the Incident_ID
+            Int32 Incident_ID;
+            //var to store the Staff_ID
+            Int32 Staff_ID;
+            //var to store the Point_Of_Contact_Comment
+            String Point_Of_Contact_Comment;
+            //create an instance of the equipment collecion
+            clsPointOfContactCollection PointOfContact = new clsPointOfContactCollection();
+            PointOfContact.FilterByIncident_ID(CommentFilter);
+            //var to store the count of records
+            Int32 RecordCount;
+            //var to store the index for the loop
+            Int32 Index = 0;
+            //get the count of records
+            RecordCount = PointOfContact.Count;
+            //clear the list box
+            lstComment.Items.Clear();
+            //while there are records to process
+            while (Index < RecordCount)
+            {
+                //get the primary key
+                Point_Of_Contact_ID = PointOfContact.PointOfContactList[Index].Point_Of_Contact_ID;
+                //get the Incident_ID
+                Incident_ID = PointOfContact.PointOfContactList[Index].Incident_ID;
+                //get the Staff_ID
+                Staff_ID = PointOfContact.PointOfContactList[Index].Staff_ID;
+                //get the Point_Of_Contact_Comment
+                Point_Of_Contact_Comment = PointOfContact.PointOfContactList[Index].Point_Of_Contact_Comment;
+                //create an entry for the list box
+                //create a new entry for the list box
+                ListItem NewEntry = new ListItem(Incident_ID + " " + Staff_ID + " " + Point_Of_Contact_Comment, Point_Of_Contact_ID.ToString());
+                //add the equipment to the list 
+                lstComment.Items.Add(NewEntry);
+                //move the index to the next record
+                Index++;
+            }
+            //return the count of records found
+            return RecordCount;
         }
     }
 }

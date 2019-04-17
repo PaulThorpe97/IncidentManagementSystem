@@ -2,8 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <p>
         <span style="text-decoration: underline; font-size: x-large;"><strong><em>Edit Incident Screen</em></strong></span><span style="font-size: x-large;">&nbsp;&nbsp;&nbsp;&nbsp; </span>
-    <asp:Button ID="btnEditIncident" runat="server" style="font-weight: bold" Text="Edit Incident"/>
-    <asp:Button ID="btnEditCancel" runat="server" style="font-weight: bold" Text="Cancel"/>
+    <asp:Button ID="btnEditIncident" runat="server" style="font-weight: bold" Text="Edit Incident" OnClick="btnEditIncident_Click"/>
+    <asp:Button ID="btnEditCancel" runat="server" style="font-weight: bold" Text="Cancel" OnClick="btnEditCancel_Click"/>
         &nbsp;&nbsp;&nbsp;&nbsp;
         </p>
     <div align="center">
@@ -62,14 +62,13 @@
     </em></strong></span><span style="color: #CC0000">*</span><span style="color: #000000">Incident ID:</span><span style="color: #CC0000">
         <asp:TextBox ID="txtCommentIncidentID" runat="server"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp; *</span>Staff ID: <asp:TextBox ID="txtCommentStaffID" runat="server"></asp:TextBox>
-    <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <strong style="font-weight: 700">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <asp:TextBox ID="txtComment" runat="server" Width="782px"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;
     <asp:Button ID="btnCommentAdd" runat="server" style="font-weight: bold" Text="Add" OnClick="btnCommentAdd_Click"/>
     <br />
     <br />
-    </strong>Display Comment History:
-    <asp:Button ID="btnDisplayComments" runat="server" Text="Display Comments" style="font-weight: 700" />
+    </strong>&nbsp;<asp:Button ID="btnSearchForComment" runat="server" Text="Search For Comment" style="font-weight: 700" OnClick="btnSearchForComment_Click" />
         &nbsp;&nbsp;&nbsp;&nbsp;
         Edit Comment: <strong>
         <asp:Button ID="btnEditComment" runat="server" style="font-weight: bold" Text="Edit " OnClick="btnEditComment_Click" />

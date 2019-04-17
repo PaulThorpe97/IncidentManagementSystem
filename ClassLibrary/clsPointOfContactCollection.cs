@@ -105,14 +105,14 @@ namespace ClassLibrary
         }
 
         //filters the records based on Staff_ID
-        public void FilterByStaff_ID(int Staff_ID)
+        public void FilterByIncident_ID(string Incident_ID)
         {
             //connect to the database
             clsDataConnection DB = new clsDataConnection();
             //send the Equipment_Name parameter to the database
-            DB.AddParameter("@Staff_ID", Staff_ID);
+            DB.AddParameter("@Incident_ID", Incident_ID);
             //execute the stored procedure
-            DB.Execute("sproc_tbl_Point_Of_Contact_Filter_By_Staff_ID");
+            DB.Execute("sproc_tbl_Point_Of_Contact_Filter_By_Incident_ID");
             //populate the array list with the data table
             PopulateArray(DB);
         }

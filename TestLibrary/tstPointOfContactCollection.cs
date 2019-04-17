@@ -173,25 +173,25 @@ namespace TestLibrary
         }
 
         [TestMethod]
-        public void FilterByEquipmentNameOK()
+        public void FilterByIncidentIDNameOK()
         {
             //create an instance of the class we want to create
-            clsEquipmentCollection AllEquipment = new clsEquipmentCollection();
+            clsPointOfContactCollection AllPointOfContact = new clsPointOfContactCollection();
             //create an instance of the filtered data
-            clsEquipmentCollection FilteredEquipment = new clsEquipmentCollection();
+            clsPointOfContactCollection FilteredPointOfContact = new clsPointOfContactCollection();
             //apply a blank string (should return all record)
-            FilteredEquipment.FilterByEquipment_Name("");
+            FilteredPointOfContact.FilterByIncident_ID("");
             //test to see that the two values are the same
-            Assert.AreEqual(AllEquipment.Count, FilteredEquipment.Count);
+            Assert.AreEqual(AllPointOfContact.Count, FilteredPointOfContact.Count);
         }
 
         [TestMethod]
-        public void FilterByStaffIDNoneFound()
+        public void FilterByIncidentIDNoneFound()
         {
             //create an instance of the class we want to create
             clsPointOfContactCollection FilteredPointOfContact = new clsPointOfContactCollection();
             //apply an Staff ID that doesnt exist
-            FilteredPointOfContact.FilterByStaff_ID(1000);
+            FilteredPointOfContact.FilterByIncident_ID("100");
             //test to see that there are no records
             Assert.AreEqual(0, FilteredPointOfContact.Count);
         }
@@ -204,7 +204,7 @@ namespace TestLibrary
             //var to store outcome
             Boolean OK = true;
             //apply the Staff ID that doesn't exist
-            FilteredPointOfContact.FilterByStaff_ID(100);
+            FilteredPointOfContact.FilterByIncident_ID("100");
             //check that the correct number of records are found
             if (FilteredPointOfContact.Count == 2)
             {
