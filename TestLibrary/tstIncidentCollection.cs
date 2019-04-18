@@ -40,6 +40,7 @@ namespace TestLibrary
             TestItem.Incident_ID = 1;
             TestItem.Incident_Pending = false;
             TestItem.Staff_ID = 1;
+            TestItem.Incident_Close = false;
             //add the item to the test list
             TestList.Add(TestItem);
             //assign the data to the property
@@ -67,6 +68,7 @@ namespace TestLibrary
             TestIncident.Incident_ID = 1;
             TestIncident.Incident_Pending = false;
             TestIncident.Staff_ID = 1;
+            TestIncident.Incident_Close = false;
             //assign the data to the property
             AllIncident.ThisIncident = TestIncident;
             //test to see that the two values are the same
@@ -96,6 +98,7 @@ namespace TestLibrary
             TestItem.Incident_ID = 1;
             TestItem.Incident_Pending = false;
             TestItem.Staff_ID = 1;
+            TestItem.Incident_Close = false;
             //add the item to the test list
             TestList.Add(TestItem);
             //assign the data to the property
@@ -125,6 +128,7 @@ namespace TestLibrary
             TestItem.Incident_ID = 1;
             TestItem.Incident_Pending = false;
             TestItem.Staff_ID = 1;
+            TestItem.Incident_Close = false;
             //set ThisIncidentto the test data
             AllIncident.ThisIncident = TestItem;
             //add the record
@@ -158,6 +162,7 @@ namespace TestLibrary
             TestItem.Incident_ID = 1;
             TestItem.Incident_Pending = false;
             TestItem.Staff_ID = 1;
+            TestItem.Incident_Close = false;
             //set ThisIncident to the test data
             AllIncident.ThisIncident = TestItem;
             //add the record
@@ -194,6 +199,7 @@ namespace TestLibrary
             TestItem.Incident_Medium = false;
             TestItem.Incident_Pending = false;
             TestItem.Staff_ID = 1;
+            TestItem.Incident_Close = false;
             //set ThisIncident to the test data
             AllIncident.ThisIncident = TestItem;
             //add the record
@@ -211,6 +217,7 @@ namespace TestLibrary
             TestItem.Incident_Medium = false;
             TestItem.Incident_Pending = false;
             TestItem.Staff_ID = 2;
+            TestItem.Incident_Close = true;
             //set the record based on the new test data
             AllIncident.ThisIncident = TestItem;
             //update the record

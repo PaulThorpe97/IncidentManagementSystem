@@ -30,6 +30,8 @@ namespace ClassLibrary
         private Boolean mIncident_Pending;
         //private data member for the Staff_ID property
         private Int32 mStaff_ID;
+        //private data member for the Incident_High property
+        private Boolean mIncident_Close;
 
         //public property for Incident_Date_Occured
         public Int32 Incident_Assign_Incident_To
@@ -199,6 +201,21 @@ namespace ClassLibrary
             }
         }
 
+        //public property for Incident_Close
+        public bool Incident_Close
+        {
+            get
+            {
+                //return the private data
+                return mIncident_Close;
+            }
+            set
+            {
+                //set the value of the private data member
+                mIncident_Close = value;
+            }
+        }
+
 
         public bool Find(int Incident_ID)
         {
@@ -223,6 +240,7 @@ namespace ClassLibrary
                 mIncident_ID = Convert.ToInt32(DB.DataTable.Rows[0]["Incident_ID"]);
                 mIncident_Pending = Convert.ToBoolean(DB.DataTable.Rows[0]["Incident_Pending"]);
                 mStaff_ID = Convert.ToInt32(DB.DataTable.Rows[0]["Staff_ID"]);
+                mIncident_Close = Convert.ToBoolean(DB.DataTable.Rows[0]["Incident_Close"]);
                 //return that everything worked ok
                 return true;
             }

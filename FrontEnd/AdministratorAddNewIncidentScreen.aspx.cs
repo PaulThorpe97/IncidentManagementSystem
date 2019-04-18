@@ -7,7 +7,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 namespace FrontEnd
 {
-    public partial class AddNewIncidentScreen : System.Web.UI.Page
+    public partial class AdministratorAddNewIncidentScreen : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -39,7 +39,7 @@ namespace FrontEnd
                 //add the record
                 AddIncident.Add();
                 //all done so redirect back to the main page
-                Response.Redirect("HomeScreen.aspx");
+                Response.Redirect("AdministratorIncidentScreen.aspx");
             }
             else
             {
@@ -53,13 +53,13 @@ namespace FrontEnd
             //add the new record
             Add();
             //all done so redirect to the main page
-            Response.Redirect("HomeScreen.aspx");
+            Response.Redirect("AdministratorIncidentScreen.aspx");
         }
 
         protected void btnAddCancel_Click(object sender, EventArgs e)
         {
             //all done so redirect to the main page
-            Response.Redirect("HomeScreen.aspx");
+            Response.Redirect("AdministratorIncidentScreen.aspx");
         }
     }
 }

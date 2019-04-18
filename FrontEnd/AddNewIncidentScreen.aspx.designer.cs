@@ -94,6 +94,15 @@ namespace FrontEnd {
         protected global::System.Web.UI.WebControls.CheckBox chkAddInProgress;
         
         /// <summary>
+        /// chkAddClose control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox chkAddClose;
+        
+        /// <summary>
         /// txtAddIncidentDescription control.
         /// </summary>
         /// <remarks>

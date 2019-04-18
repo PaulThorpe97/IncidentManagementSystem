@@ -13,15 +13,6 @@ namespace FrontEnd {
     public partial class HomeScreen {
         
         /// <summary>
-        /// btnSearhForClosedIncidents control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSearhForClosedIncidents;
-        
-        /// <summary>
         /// btnLogOut control.
         /// </summary>
         /// <remarks>
@@ -67,6 +58,60 @@ namespace FrontEnd {
         protected global::System.Web.UI.WebControls.Button btnSearchForIncident;
         
         /// <summary>
+        /// txtFilterByAssignIncidentTo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtFilterByAssignIncidentTo;
+        
+        /// <summary>
+        /// btnFilterByAssignTo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnFilterByAssignTo;
+        
+        /// <summary>
+        /// txtFilterByEquipmentID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtFilterByEquipmentID;
+        
+        /// <summary>
+        /// btnFilterByEquipmentID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnFilterByEquipmentID;
+        
+        /// <summary>
+        /// txtFilterByHigh control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtFilterByHigh;
+        
+        /// <summary>
+        /// btnFilterByHigh control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnFilterByHigh;
+        
+        /// <summary>
         /// btnAddNewIncident control.
         /// </summary>
         /// <remarks>
@@ -83,6 +128,24 @@ namespace FrontEnd {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnEditIncidentDetails;
+        
+        /// <summary>
+        /// txtFilterByClosedIncident control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtFilterByClosedIncident;
+        
+        /// <summary>
+        /// btnFilterByClosedIncident control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnFilterByClosedIncident;
         
         /// <summary>
         /// btnCloseIncident control.

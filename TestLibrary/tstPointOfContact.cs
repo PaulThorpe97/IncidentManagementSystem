@@ -112,7 +112,7 @@ namespace TestLibrary
             //invoke the method
             Found = APointOfContact.Find(Point_Of_Contact_ID);
             //check the Point_Of_Contact_Comment
-            if (APointOfContact.Point_Of_Contact_Comment != "I tried")
+            if (APointOfContact.Point_Of_Contact_Comment != "Done")
             {
                 OK = false;
             }

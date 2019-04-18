@@ -8,7 +8,7 @@ using System.Web.UI.WebControls;
 
 namespace FrontEnd
 {
-    public partial class DeleteIncidentScreen : System.Web.UI.Page
+    public partial class AdministratorDeleteIncidentScreen : System.Web.UI.Page
     {
         //var to store the primary key value of the record to be deleted
         Int32 Incident_ID;
@@ -36,13 +36,13 @@ namespace FrontEnd
             //delete the record
             DeleteIncident();
             //redirect to the main page
-            Response.Redirect("HomeScreen.aspx");
+            Response.Redirect("AdministratorIncidentScreen.aspx");
         }
 
         protected void btnDeleteIncidentNo_Click(object sender, EventArgs e)
         {
             //redirect to the main page
-            Response.Redirect("HomeScreen.aspx");
+            Response.Redirect("AdministratorIncidentScreen.aspx");
         }
     }
 }

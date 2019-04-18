@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Default.Master" AutoEventWireup="true" CodeBehind="AddNewIncidentScreen.aspx.cs" Inherits="FrontEnd.AddNewIncidentScreen" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Default.Master" AutoEventWireup="true" CodeBehind="AdministratorAddNewIncidentScreen.aspx.cs" Inherits="FrontEnd.AdministratorAddNewIncidentScreen" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   <p>
+      <p>
         <span style="text-decoration: underline; font-size: x-large;">
         <strong><em>Add New Incident Screen</em></strong></span>&nbsp;&nbsp;&nbsp;&nbsp;
         </p>
@@ -30,7 +30,7 @@
     <p>
         a) <span style="color: #CC0000">High</span>:<asp:CheckBox ID="chkAddHigh" runat="server" />
     &nbsp;&nbsp;&nbsp;&nbsp;
-        b) <span style="color: #FF9900">Medium</span>:<asp:CheckBox ID="chkAddMedium" runat="server" />
+        b) <span style="color: #FF9900">Medium</span>:<asp:CheckBox ID="chkAddMedium" runat="server"  />
     &nbsp;&nbsp;&nbsp;&nbsp;
         c) <span style="color: #009933">Low</span>:<asp:CheckBox ID="chkAddLow" runat="server" />
     </p>

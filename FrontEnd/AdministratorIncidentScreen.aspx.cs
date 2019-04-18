@@ -41,7 +41,7 @@ namespace FrontEnd
             //store -1 into the session object to indicate his is a new record
             Session["Incident_ID"] = -1;
             //redirect to the data entry page
-            Response.Redirect("AddNewIncidentScreen.aspx");
+            Response.Redirect("AdministratorAddNewIncidentScreen.aspx");
         }
 
         //Event Handler for the edit button
@@ -128,13 +128,213 @@ namespace FrontEnd
                 //store the data in the session object
                 Session["Incident_ID"] = Incident_ID;
                 //redirect to the delete page
-                Response.Redirect("DeleteIncidentScreen.aspx");
+                Response.Redirect("AdministratorDeleteIncidentScreen.aspx");
             }
             else //if no record has been selected 
             {
                 //display an error
                 lblError.Text = "Please select a record to delete from the list";
             }
+        }
+
+        protected void btnFilterByHigh_Click(object sender, EventArgs e)
+        {
+            //display only incident matching the text in the search text box
+            DisplayHighIncident(txtFilterByHigh.Text);
+        }
+
+        Int32 DisplayHighIncident(string HighIncidentFilter)
+        {
+            //var to store the primary key
+            Int32 Incident_ID;
+            //var to store the Staff_ID
+            Int32 Staff_ID;
+            //var to store the Incident_Date_Occured
+            DateTime Incident_Date_Occured;
+            //var to store the Incident_Description
+            String Incident_Description;
+            //create an instance of the equipment collecion
+            clsIncidentCollection Incident = new clsIncidentCollection();
+            Incident.FilterByIncident_High(HighIncidentFilter);
+            //var to store the count of records
+            Int32 RecordCount;
+            //var to store the index for the loop
+            Int32 Index = 0;
+            //get the count of records
+            RecordCount = Incident.Count;
+            //clear the list box
+            lstIncidents.Items.Clear();
+            //while there are records to process
+            while (Index < RecordCount)
+            {
+                //get the primary key
+                Incident_ID = Incident.IncidentList[Index].Incident_ID;
+                //get the Staff_ID
+                Staff_ID = Incident.IncidentList[Index].Staff_ID;
+                //get the Incident_Date_Occured
+                Incident_Date_Occured = Incident.IncidentList[Index].Incident_Date_Occured;
+                //get the Incident_Description
+                Incident_Description = Incident.IncidentList[Index].Incident_Description;
+                //create an entry for the list box
+                //create a new entry for the list box
+                ListItem NewEntry = new ListItem(Incident_ID + " " + Staff_ID + " " + Incident_Description + " " + Incident_Date_Occured, Incident_ID.ToString());
+                //add the equipment to the list 
+                lstIncidents.Items.Add(NewEntry);
+                //move the index to the next record
+                Index++;
+            }
+            //return the count of records found
+            return RecordCount;
+        }
+
+        protected void btnFilterByEquipmentID_Click(object sender, EventArgs e)
+        {
+            //display only incident matching the text in the search text box
+            DisplayIncidentEquipmentID(txtFilterByEquipmentID.Text);
+        }
+
+        Int32 DisplayIncidentEquipmentID(string EquipmentIncidentFilter)
+        {
+            //var to store the primary key
+            Int32 Incident_ID;
+            //var to store the Staff_ID
+            Int32 Staff_ID;
+            //var to store the Incident_Date_Occured
+            DateTime Incident_Date_Occured;
+            //var to store the Incident_Description
+            String Incident_Description;
+            //create an instance of the equipment collecion
+            clsIncidentCollection Incident = new clsIncidentCollection();
+            Incident.FilterByEquipment_ID(EquipmentIncidentFilter);
+            //var to store the count of records
+            Int32 RecordCount;
+            //var to store the index for the loop
+            Int32 Index = 0;
+            //get the count of records
+            RecordCount = Incident.Count;
+            //clear the list box
+            lstIncidents.Items.Clear();
+            //while there are records to process
+            while (Index < RecordCount)
+            {
+                //get the primary key
+                Incident_ID = Incident.IncidentList[Index].Incident_ID;
+                //get the Staff_ID
+                Staff_ID = Incident.IncidentList[Index].Staff_ID;
+                //get the Incident_Date_Occured
+                Incident_Date_Occured = Incident.IncidentList[Index].Incident_Date_Occured;
+                //get the Incident_Description
+                Incident_Description = Incident.IncidentList[Index].Incident_Description;
+                //create an entry for the list box
+                //create a new entry for the list box
+                ListItem NewEntry = new ListItem(Incident_ID + " " + Staff_ID + " " + Incident_Description + " " + Incident_Date_Occured, Incident_ID.ToString());
+                //add the equipment to the list 
+                lstIncidents.Items.Add(NewEntry);
+                //move the index to the next record
+                Index++;
+            }
+            //return the count of records found
+            return RecordCount;
+        }
+
+        protected void btnFilterByAssignTo_Click(object sender, EventArgs e)
+        {
+            //display only incident matching the text in the search text box
+            DisplayIncidentAssignIncidentTo(txtFilterByAssignIncidentTo.Text);
+        }
+
+        Int32 DisplayIncidentAssignIncidentTo(string AssignIncidentToFilter)
+        {
+            //var to store the primary key
+            Int32 Incident_ID;
+            //var to store the Staff_ID
+            Int32 Staff_ID;
+            //var to store the Incident_Date_Occured
+            DateTime Incident_Date_Occured;
+            //var to store the Incident_Description
+            String Incident_Description;
+            //create an instance of the equipment collecion
+            clsIncidentCollection Incident = new clsIncidentCollection();
+            Incident.FilterByIncident_Assign_Incident_To(AssignIncidentToFilter);
+            //var to store the count of records
+            Int32 RecordCount;
+            //var to store the index for the loop
+            Int32 Index = 0;
+            //get the count of records
+            RecordCount = Incident.Count;
+            //clear the list box
+            lstIncidents.Items.Clear();
+            //while there are records to process
+            while (Index < RecordCount)
+            {
+                //get the primary key
+                Incident_ID = Incident.IncidentList[Index].Incident_ID;
+                //get the Staff_ID
+                Staff_ID = Incident.IncidentList[Index].Staff_ID;
+                //get the Incident_Date_Occured
+                Incident_Date_Occured = Incident.IncidentList[Index].Incident_Date_Occured;
+                //get the Incident_Description
+                Incident_Description = Incident.IncidentList[Index].Incident_Description;
+                //create an entry for the list box
+                //create a new entry for the list box
+                ListItem NewEntry = new ListItem(Incident_ID + " " + Staff_ID + " " + Incident_Description + " " + Incident_Date_Occured, Incident_ID.ToString());
+                //add the equipment to the list 
+                lstIncidents.Items.Add(NewEntry);
+                //move the index to the next record
+                Index++;
+            }
+            //return the count of records found
+            return RecordCount;
+        }
+
+        protected void btnFilterByClosedIncident_Click(object sender, EventArgs e)
+        {
+            //display only incident matching the text in the search text box
+            DisplayClosedIncidents(txtFilterByClosedIncident.Text);
+        }
+
+        Int32 DisplayClosedIncidents(string ClosedIncidentFilter)
+        {
+            //var to store the primary key
+            Int32 Incident_ID;
+            //var to store the Staff_ID
+            Int32 Staff_ID;
+            //var to store the Incident_Date_Occured
+            DateTime Incident_Date_Occured;
+            //var to store the Incident_Description
+            String Incident_Description;
+            //create an instance of the equipment collecion
+            clsIncidentCollection Incident = new clsIncidentCollection();
+            Incident.FilterByIncident_Close(ClosedIncidentFilter);
+            //var to store the count of records
+            Int32 RecordCount;
+            //var to store the index for the loop
+            Int32 Index = 0;
+            //get the count of records
+            RecordCount = Incident.Count;
+            //clear the list box
+            lstIncidents.Items.Clear();
+            //while there are records to process
+            while (Index < RecordCount)
+            {
+                //get the primary key
+                Incident_ID = Incident.IncidentList[Index].Incident_ID;
+                //get the Staff_ID
+                Staff_ID = Incident.IncidentList[Index].Staff_ID;
+                //get the Incident_Date_Occured
+                Incident_Date_Occured = Incident.IncidentList[Index].Incident_Date_Occured;
+                //get the Incident_Description
+                Incident_Description = Incident.IncidentList[Index].Incident_Description;
+                //create an entry for the list box
+                //create a new entry for the list box
+                ListItem NewEntry = new ListItem(Incident_ID + " " + Staff_ID + " " + Incident_Description + " " + Incident_Date_Occured, Incident_ID.ToString());
+                //add the equipment to the list 
+                lstIncidents.Items.Add(NewEntry);
+                //move the index to the next record
+                Index++;
+            }
+            //return the count of records found
+            return RecordCount;
         }
     }
 }

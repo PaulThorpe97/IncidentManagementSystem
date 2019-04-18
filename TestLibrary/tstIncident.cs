@@ -215,7 +215,7 @@ namespace TestLibrary
             //invoke the method
             Found = AIncident.Find(Incident_ID);
             //check the Incident_Date_Occured
-            if (AIncident.Incident_Date_Occured !=Convert.ToDateTime("15/04/2019"))
+            if (AIncident.Incident_Date_Occured !=Convert.ToDateTime("16/04/2019"))
             {
                 OK = false;
             }
@@ -303,7 +303,7 @@ namespace TestLibrary
             //invoke the method
             Found = AIncident.Find(Incident_ID);
             //check the Incident_In_Progress
-            if (AIncident.Incident_In_Progress != true)
+            if (AIncident.Incident_In_Progress != false)
             {
                 OK = false;
             }
@@ -326,7 +326,7 @@ namespace TestLibrary
             //invoke the method
             Found = AIncident.Find(Incident_ID);
             //check the Incident_Low
-            if (AIncident.Incident_Low != true)
+            if (AIncident.Incident_Low != false)
             {
                 OK = false;
             }
@@ -418,6 +418,28 @@ namespace TestLibrary
             Found = AIncident.Find(Incident_ID);
             //check the Incident_ID
             if (AIncident.Staff_ID != 1)
+            {
+                OK = false;
+            }
+            //test to see that the result is correct
+            Assert.IsTrue(OK);
+        }
+
+        [TestMethod]
+        public void Incident_CloseFound()
+        {
+            //create an instance of the class we want to create
+            clsIncident AIncident = new clsIncident();
+            //boolean variable to store the result of the validation
+            Boolean Found = false;
+            //boolean variable to record if data is ok (assume it is)
+            Boolean OK = true;
+            //create some test data to use with the method
+            Int32 Incident_ID = 1;
+            //invoke the method
+            Found = AIncident.Find(Incident_ID);
+            //check the Incident_High
+            if (AIncident.Incident_Close != false)
             {
                 OK = false;
             }

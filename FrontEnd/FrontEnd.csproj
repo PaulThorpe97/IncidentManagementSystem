@@ -69,10 +69,12 @@
   <ItemGroup>
     <Content Include="AddNewIncidentScreen.aspx" />
     <Content Include="AdministratorAddNewEquipmentScreen.aspx" />
+    <Content Include="AdministratorAddNewIncidentScreen.aspx" />
     <Content Include="AdministratorAddNewRoleScreen.aspx" />
     <Content Include="AdministratorAddNewStaffScreen.aspx" />
     <Content Include="AdministratorDeleteCommentScreen.aspx" />
     <Content Include="AdministratorDeleteEquipmentScreen.aspx" />
+    <Content Include="AdministratorDeleteIncidentScreen.aspx" />
     <Content Include="AdministratorDeleteRoleScreen.aspx" />
     <Content Include="AdministratorDeleteStaffScreen.aspx" />
     <Content Include="AdministratorEditCommentScreen.aspx" />
@@ -111,6 +113,13 @@
     <Compile Include="AdministratorAddNewEquipmentScreen.aspx.designer.cs">
       <DependentUpon>AdministratorAddNewEquipmentScreen.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdministratorAddNewIncidentScreen.aspx.cs">
+      <DependentUpon>AdministratorAddNewIncidentScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorAddNewIncidentScreen.aspx.designer.cs">
+      <DependentUpon>AdministratorAddNewIncidentScreen.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdministratorAddNewRoleScreen.aspx.cs">
       <DependentUpon>AdministratorAddNewRoleScreen.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -138,6 +147,13 @@
     </Compile>
     <Compile Include="AdministratorDeleteEquipmentScreen.aspx.designer.cs">
       <DependentUpon>AdministratorDeleteEquipmentScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorDeleteIncidentScreen.aspx.cs">
+      <DependentUpon>AdministratorDeleteIncidentScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorDeleteIncidentScreen.aspx.designer.cs">
+      <DependentUpon>AdministratorDeleteIncidentScreen.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdministratorDeleteRoleScreen.aspx.cs">
       <DependentUpon>AdministratorDeleteRoleScreen.aspx</DependentUpon>

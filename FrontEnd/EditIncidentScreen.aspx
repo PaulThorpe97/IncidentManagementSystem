@@ -2,8 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
        <p>
         <span style="text-decoration: underline; font-size: x-large;"><strong><em>Edit Incident Screen</em></strong></span><span style="font-size: x-large;">&nbsp;&nbsp;&nbsp;&nbsp; </span>
-    <asp:Button ID="btnEditIncident" runat="server" style="font-weight: bold" Text="Edit Incident"/>
-    <asp:Button ID="btnEditCancel" runat="server" style="font-weight: bold" Text="Cancel"/>
+    <asp:Button ID="btnEditIncident" runat="server" style="font-weight: bold" Text="Edit Incident" OnClick="btnEditIncident_Click"/>
+    <asp:Button ID="btnEditCancel" runat="server" style="font-weight: bold" Text="Cancel" OnClick="btnEditCancel_Click"/>
         &nbsp;&nbsp;&nbsp;&nbsp;
         </p>
     <div align="center">
@@ -14,14 +14,14 @@
     <p>
         <span style="color: #CC0000">
         *<span style="color: #000000">Incident ID:</span>
-        <asp:TextBox ID="txtIncidentID" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtEditIncidentID" runat="server"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         *</span>Staff ID:&nbsp;
         <asp:TextBox ID="txtEditStaffID" runat="server"></asp:TextBox>
     &nbsp;&nbsp;&nbsp;&nbsp;
         Assign Incident to: 
         <asp:TextBox ID="txtEditAssignIncidentTo" runat="server"></asp:TextBox>
-        <span style="color: #CC0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *</span>Date Occured:
+        <span style="color: #CC0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *</span>Date Occured/Last Edited:
         <asp:TextBox ID="txtEditIncidentDateOccured" runat="server"></asp:TextBox>
     </p>
     <hr>
@@ -46,6 +46,7 @@
         a) Pending<asp:CheckBox ID="chkEditPending" runat="server" />
     &nbsp;&nbsp;&nbsp;&nbsp;
         b) In Progress:<asp:CheckBox ID="chkEditInProgress" runat="server" />
+    &nbsp;&nbsp;&nbsp;&nbsp; c) Close<asp:CheckBox ID="chkEditClose" runat="server" />
     </p>
     <hr>
     <br /><span style="color: #CC0000">*</span><span style="text-decoration: underline"><em><strong>Incident Description:<br />
@@ -62,18 +63,16 @@
     </em></strong></span><span style="color: #CC0000">*</span><span style="color: #000000">Incident ID:</span><span style="color: #CC0000">
         <asp:TextBox ID="txtCommentIncidentID" runat="server"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp; *</span>Staff ID: <asp:TextBox ID="txtCommentStaffID" runat="server"></asp:TextBox>
-    <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <strong style="font-weight: 700">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <asp:TextBox ID="txtComment" runat="server" Width="782px"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;
-    <asp:Button ID="btnCommentsAdd" runat="server" style="font-weight: bold" Text="Add" />
-    <asp:Button ID="btnCommentsCancel" runat="server" style="font-weight: bold" Text="Cancel" />
+    <asp:Button ID="btnCommentAdd" runat="server" style="font-weight: bold" Text="Add" OnClick="btnCommentAdd_Click"/>
     <br />
     <br />
-    </strong>Display Comment History:
-    <asp:Button ID="btnDisplayComments" runat="server" Text="Display Comments" style="font-weight: 700" />
+    </strong>&nbsp;<asp:Button ID="btnSearchForComment" runat="server" Text="Search For Comment" style="font-weight: 700" OnClick="btnSearchForComment_Click" />
         &nbsp;&nbsp;&nbsp;&nbsp;
         Edit Comment: <strong>
-        <asp:Button ID="btnEditComment" runat="server" style="font-weight: bold" Text="Edit " />
+        <asp:Button ID="btnEditComment" runat="server" style="font-weight: bold" Text="Edit " OnClick="btnEditComment_Click" />
 &nbsp;&nbsp;&nbsp; <br />
     <br />
     <asp:ListBox ID="lstComment" runat="server" Height="183px" Width="1220px" style="font-weight: bold"></asp:ListBox>

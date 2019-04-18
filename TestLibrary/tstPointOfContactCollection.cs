@@ -191,7 +191,7 @@ namespace TestLibrary
             //create an instance of the class we want to create
             clsPointOfContactCollection FilteredPointOfContact = new clsPointOfContactCollection();
             //apply an Staff ID that doesnt exist
-            FilteredPointOfContact.FilterByIncident_ID("100");
+            FilteredPointOfContact.FilterByIncident_ID("1000");
             //test to see that there are no records
             Assert.AreEqual(0, FilteredPointOfContact.Count);
         }
@@ -204,7 +204,7 @@ namespace TestLibrary
             //var to store outcome
             Boolean OK = true;
             //apply the Staff ID that doesn't exist
-            FilteredPointOfContact.FilterByIncident_ID("100");
+            FilteredPointOfContact.FilterByIncident_ID("1000");
             //check that the correct number of records are found
             if (FilteredPointOfContact.Count == 2)
             {

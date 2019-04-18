@@ -82,6 +82,7 @@ namespace ClassLibrary
             DB.AddParameter("@Incident_Medium", mThisIncident.Incident_Medium);
             DB.AddParameter("@Incident_Pending", mThisIncident.Incident_Pending);
             DB.AddParameter("@Staff_ID", mThisIncident.Staff_ID);
+            DB.AddParameter("@Incident_Close", mThisIncident.Incident_Close);
             //execute the query returning the primary key value
             return DB.Execute("sproc_tbl_Incident_Insert");
         }
@@ -114,11 +115,12 @@ namespace ClassLibrary
             DB.AddParameter("@Incident_ID", mThisIncident.Incident_ID);
             DB.AddParameter("@Incident_Pending", mThisIncident.Incident_Pending);
             DB.AddParameter("@Staff_ID", mThisIncident.Staff_ID);
+            DB.AddParameter("@Incident_Close", mThisIncident.Incident_Close);
             //execute the stored procedure
             DB.Execute("sproc_tbl_Incident_Update");
         }
 
-        //filters the records based on equipment name
+        //filters the records based on staff id
         public void FilterByStaff_ID(string Staff_ID)
         {
             //connect to the database
@@ -130,6 +132,59 @@ namespace ClassLibrary
             //populate the array list with the data table
             PopulateArray(DB);
         }
+
+        //filters the records based on Incident_Assign_Incident_To
+        public void FilterByIncident_Assign_Incident_To(string Incident_Assign_Incident_To)
+        {
+            //connect to the database
+            clsDataConnection DB = new clsDataConnection();
+            //send the Staff_ID parameter to the database
+            DB.AddParameter("@Incident_Assign_Incident_To", Incident_Assign_Incident_To);
+            //execute the stored procedure
+            DB.Execute("sproc_tbl_Incident_Filter_By_Incident_Assign_Incident_To");
+            //populate the array list with the data table
+            PopulateArray(DB);
+        }
+
+        //filters the records based on Incident_High
+        public void FilterByIncident_High(string Incident_High)
+        {
+            //connect to the database
+            clsDataConnection DB = new clsDataConnection();
+            //send the Staff_ID parameter to the database
+            DB.AddParameter("@Incident_High", Incident_High);
+            //execute the stored procedure
+            DB.Execute("sproc_tbl_Incident_Filter_By_Incident_High");
+            //populate the array list with the data table
+            PopulateArray(DB);
+        }
+
+        //filters the records based on Equipment_ID
+        public void FilterByEquipment_ID(string Equipment_ID)
+        {
+            //connect to the database
+            clsDataConnection DB = new clsDataConnection();
+            //send the Staff_ID parameter to the database
+            DB.AddParameter("@Equipment_ID", Equipment_ID);
+            //execute the stored procedure
+            DB.Execute("sproc_tbl_Incident_Filter_By_Equipment_ID");
+            //populate the array list with the data table
+            PopulateArray(DB);
+        }
+
+        //filters the records based on Equipment_ID
+        public void FilterByIncident_Close(string Incident_Close)
+        {
+            //connect to the database
+            clsDataConnection DB = new clsDataConnection();
+            //send the Staff_ID parameter to the database
+            DB.AddParameter("@Incident_Close", Incident_Close);
+            //execute the stored procedure
+            DB.Execute("sproc_tbl_Incident_Filter_By_Incident_Close");
+            //populate the array list with the data table
+            PopulateArray(DB);
+        }
+
 
         //populates the array list based on the data table in the parameter DB
         void PopulateArray(clsDataConnection DB)
@@ -160,6 +215,7 @@ namespace ClassLibrary
                 AnIncident.Incident_ID = Convert.ToInt32(DB.DataTable.Rows[Index]["Incident_ID"]);
                 AnIncident.Incident_Pending= Convert.ToBoolean(DB.DataTable.Rows[Index]["Incident_Pending"]);
                 AnIncident.Staff_ID = Convert.ToInt32(DB.DataTable.Rows[Index]["Staff_ID"]);
+                AnIncident.Incident_Close = Convert.ToBoolean(DB.DataTable.Rows[Index]["Incident_Close"]);
                 //add the record to the private data member
                 mIncidentList.Add(AnIncident);
                 //point at the next record

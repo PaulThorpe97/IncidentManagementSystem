@@ -21,7 +21,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;
         Assign Incident to: 
         <asp:TextBox ID="txtEditAssignIncidentTo" runat="server"></asp:TextBox>
-        <span style="color: #CC0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *</span>Date Occured:
+        <span style="color: #CC0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *</span>Date Occured/Last Edited:
         <asp:TextBox ID="txtEditIncidentDateOccured" runat="server"></asp:TextBox>
     </p>
     <hr>
@@ -46,6 +46,7 @@
         a) Pending<asp:CheckBox ID="chkEditPending" runat="server" />
     &nbsp;&nbsp;&nbsp;&nbsp;
         b) In Progress:<asp:CheckBox ID="chkEditInProgress" runat="server" />
+    &nbsp;&nbsp;&nbsp;&nbsp; c) Close<asp:CheckBox ID="chkEditClose" runat="server" />
     </p>
     <hr>
     <br /><span style="color: #CC0000">*</span><span style="text-decoration: underline"><em><strong>Incident Description:<br />

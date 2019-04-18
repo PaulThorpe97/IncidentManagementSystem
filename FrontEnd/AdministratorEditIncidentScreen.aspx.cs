@@ -53,10 +53,11 @@ namespace FrontEnd
                 AddIncident.ThisIncident.Incident_Medium = chkEditMedium.Checked;
                 AddIncident.ThisIncident.Incident_Pending = chkEditPending.Checked;
                 AddIncident.ThisIncident.Staff_ID = Convert.ToInt32(txtEditStaffID.Text);
+                AddIncident.ThisIncident.Incident_Close = chkEditClose.Checked;
                 //add the record
                 AddIncident.Add();
                 //all done so redirect back to the main page
-                Response.Redirect("HomeScreen.aspx");
+                Response.Redirect("AdministratorIncidentScreen.aspx");
             }
             else
             {
@@ -114,10 +115,11 @@ namespace FrontEnd
                 Incident.ThisIncident.Incident_Medium = chkEditMedium.Checked;
                 Incident.ThisIncident.Incident_Pending = chkEditPending.Checked;
                 Incident.ThisIncident.Staff_ID = Convert.ToInt32(txtEditStaffID.Text);
+                Incident.ThisIncident.Incident_Close= chkEditClose.Checked;
                 //update the record
                 Incident.Update();
                 //all done so redirect back to the main page
-                Response.Redirect("HomeScreen.aspx");
+                Response.Redirect("AdministratorIncidentScreen.aspx");
             }
             else
             {
@@ -172,6 +174,7 @@ namespace FrontEnd
             chkEditMedium.Checked = Incident.ThisIncident.Incident_Medium;
             chkEditPending.Checked = Incident.ThisIncident.Incident_Pending;
             txtEditStaffID.Text = Incident.ThisIncident.Staff_ID.ToString();
+            chkEditClose.Checked = Incident.ThisIncident.Incident_Close;
         }
    
         protected void btnEditIncident_Click(object sender, EventArgs e)
@@ -191,7 +194,7 @@ namespace FrontEnd
         protected void btnEditCancel_Click(object sender, EventArgs e)
         {
             //direct to home screen
-            Response.Redirect("HomeScreen.aspx");
+            Response.Redirect("AdministratorIncidentScreen.aspx");
         }
 
         protected void btnCommentAdd_Click(object sender, EventArgs e)
