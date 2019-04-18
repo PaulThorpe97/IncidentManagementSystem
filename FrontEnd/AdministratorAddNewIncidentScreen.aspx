@@ -3,6 +3,8 @@
       <p>
         <span style="text-decoration: underline; font-size: x-large;">
         <strong><em>Add New Incident Screen</em></strong></span>&nbsp;&nbsp;&nbsp;&nbsp;
+          <asp:Button ID="btnHome" runat="server" OnClick="btnHome_Click" style="font-weight: 700" Text="Home" />
+          <asp:Button ID="btnCloseIncident" runat="server" style="font-weight: 700" Text="CloseIncident" />
         </p>
     <hr>
     <div align="center">

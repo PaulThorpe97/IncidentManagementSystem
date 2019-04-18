@@ -38,7 +38,7 @@ namespace FrontEnd
                 AddIncident.ThisIncident.Incident_Close = chkAddClose.Checked;
                 //add the record
                 AddIncident.Add();
-                //all done so redirect back to the main page
+                //direct to home screen
                 Response.Redirect("AdministratorIncidentScreen.aspx");
             }
             else
@@ -52,13 +52,17 @@ namespace FrontEnd
         {
             //add the new record
             Add();
-            //all done so redirect to the main page
-            Response.Redirect("AdministratorIncidentScreen.aspx");
         }
 
         protected void btnAddCancel_Click(object sender, EventArgs e)
         {
             //all done so redirect to the main page
+            Response.Redirect("AdministratorIncidentScreen.aspx");
+        }
+
+        protected void btnHome_Click(object sender, EventArgs e)
+        {
+            //direct to home screen
             Response.Redirect("AdministratorIncidentScreen.aspx");
         }
     }

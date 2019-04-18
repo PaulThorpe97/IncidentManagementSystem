@@ -22,6 +22,24 @@ namespace FrontEnd {
         protected global::System.Web.UI.WebControls.Button btnEditIncident;
         
         /// <summary>
+        /// btnCloseIncident control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnCloseIncident;
+        
+        /// <summary>
+        /// btnHome control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnHome;
+        
+        /// <summary>
         /// btnEditCancel control.
         /// </summary>
         /// <remarks>

@@ -3,6 +3,8 @@
      <p>
         <span style="text-decoration: underline; font-size: x-large;"><strong><em>Edit Incident Screen</em></strong></span><span style="font-size: x-large;">&nbsp;&nbsp;&nbsp;&nbsp; </span>
     <asp:Button ID="btnEditIncident" runat="server" style="font-weight: bold" Text="Edit Incident" OnClick="btnEditIncident_Click"/>
+         <asp:Button ID="btnCloseIncident" runat="server" style="font-weight: 700" Text="CloseIncident" />
+         <asp:Button ID="btnHome" runat="server" OnClick="btnHome_Click" style="font-weight: 700" Text="Home" />
     <asp:Button ID="btnEditCancel" runat="server" style="font-weight: bold" Text="Cancel" OnClick="btnEditCancel_Click"/>
         &nbsp;&nbsp;&nbsp;&nbsp;
         </p>

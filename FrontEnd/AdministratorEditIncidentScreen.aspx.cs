@@ -56,7 +56,7 @@ namespace FrontEnd
                 AddIncident.ThisIncident.Incident_Close = chkEditClose.Checked;
                 //add the record
                 AddIncident.Add();
-                //all done so redirect back to the main page
+                //direct to home screen
                 Response.Redirect("AdministratorIncidentScreen.aspx");
             }
             else
@@ -82,8 +82,6 @@ namespace FrontEnd
                 AddPointOfContact.ThisPointOfContact.Staff_ID = Convert.ToInt32(txtCommentStaffID.Text);
                 //add the record
                 AddPointOfContact.PointOfContactAdd();
-                //all done so redirect back to the main page
-                Response.Redirect("AdministratorIncidentScreen.aspx");
             }
             else
             {
@@ -118,8 +116,6 @@ namespace FrontEnd
                 Incident.ThisIncident.Incident_Close= chkEditClose.Checked;
                 //update the record
                 Incident.Update();
-                //all done so redirect back to the main page
-                Response.Redirect("AdministratorIncidentScreen.aspx");
             }
             else
             {
@@ -146,8 +142,6 @@ namespace FrontEnd
                 PointOfContact.ThisPointOfContact.Staff_ID = Convert.ToInt32(txtCommentStaffID.Text);
                 //update the record
                 PointOfContact.PointOfContactUpdate();
-                //all done so redirect back to the main page
-                Response.Redirect("AdministratorIncidentScreen.aspx");
             }
             else
             {
@@ -292,6 +286,12 @@ namespace FrontEnd
             }
             //return the count of records found
             return RecordCount;
+        }
+
+        protected void btnHome_Click(object sender, EventArgs e)
+        {
+            //direct to home screen
+            Response.Redirect("AdministratorIncidentScreen.aspx");
         }
     }
 }
