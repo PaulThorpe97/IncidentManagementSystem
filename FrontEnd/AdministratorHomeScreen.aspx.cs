@@ -13,5 +13,29 @@ namespace FrontEnd
         {
 
         }
+
+        protected void btnIncidents_Click(object sender, EventArgs e)
+        {
+            //direct to incident screen
+            Response.Redirect("AdministratorIncidentScreen.aspx");
+        }
+
+        protected void btnStaff_Click(object sender, EventArgs e)
+        {
+            //direct to staff screen
+            Response.Redirect("AdministratorStaffScreen.aspx");
+        }
+
+        protected void btnEquipment_Click(object sender, EventArgs e)
+        {
+            //direct to equipment screen
+            Response.Redirect("AdministratorEquipmentScreen.aspx");
+        }
+
+        protected void btnRoles_Click(object sender, EventArgs e)
+        {
+            //direct to  roles screen
+            Response.Redirect("AdministratorRoleScreen.aspx");
+        }
     }
 }

@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsClosedIncident.cs" />
+    <Compile Include="clsClosedIncidentCollection.cs" />
     <Compile Include="clsDataConnection.cs" />
     <Compile Include="clsEquipment.cs" />
     <Compile Include="clsEquipmentCollection.cs" />

@@ -141,9 +141,10 @@ namespace FrontEnd
             DisplayEquipment("");
         }
 
-        protected void lstEquipment_SelectedIndexChanged(object sender, EventArgs e)
+        protected void btnHome_Click(object sender, EventArgs e)
         {
-
+            //redirect to the home page
+            Response.Redirect("AdministratorHomeScreen.aspx");
         }
     }
 }

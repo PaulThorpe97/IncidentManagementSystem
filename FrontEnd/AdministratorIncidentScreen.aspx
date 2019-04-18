@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
         <span style="font-size: x-large">&nbsp;</span><strong><span style="text-decoration: underline; font-size: x-large;"><em>Home Screen</em></span><span style="font-weight: normal">&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="text-decoration: underline">
-    <asp:Button ID="btnHome" runat="server" Text="Home" style="font-weight: bold; " />
+    <asp:Button ID="btnHome" runat="server" Text="Home" style="font-weight: bold; " OnClick="btnHome_Click" />
         </span><asp:Button ID="btnLogOut" runat="server" Text="Log Out" style="text-align: left; font-weight: bold; " />
         </strong>
     </p>

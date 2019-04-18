@@ -1,8 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Default.Master" AutoEventWireup="true" CodeBehind="AdministratorRoleScreen.aspx.cs" Inherits="FrontEnd.AdministratorRoleScreen" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
-        <strong><span style="text-decoration: underline; font-size: x-large;"><em>Role Screen</em></span><span style="font-weight: normal">&nbsp;&nbsp;&nbsp;&nbsp; </span><em>
-        <asp:Button ID="btnLogOut" runat="server" Text="Log Out" style="text-align: left; font-weight: bold; font-style: italic;" />
+        <strong><span style="text-decoration: underline; font-size: x-large;"><em>Role Screen</em></span><span style="font-weight: normal">&nbsp;&nbsp;&nbsp;&nbsp; 
+        <asp:Button ID="btnHome" runat="server" OnClick="btnHome_Click" style="font-weight: 700; height: 26px;" Text="Home" />
+        </span><em>
+        <asp:Button ID="btnLogOut" runat="server" Text="Log Out" style="text-align: left; font-weight: bold; font-style: italic;"/>
         </em></strong>
     </p>
     <hr>
