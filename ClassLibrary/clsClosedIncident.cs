@@ -102,7 +102,7 @@ namespace ClassLibrary
             //add the parameter for the Equipment_ID to search for
             DB.AddParameter("@Closed_Incident_ID", Closed_Incident_ID);
             //execute the stored procedure
-            DB.Execute("sproc_tbl_Equipment_Filter_By_Incident_ID");
+            DB.Execute("sproc_tbl_Closed_Incident_Filter_By_Closed_Incident_ID");
             //if one record is found (there should be either one or zero!)
             if (DB.Count == 1)
             {

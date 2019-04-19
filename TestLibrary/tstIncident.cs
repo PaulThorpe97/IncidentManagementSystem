@@ -627,7 +627,7 @@ namespace TestLibrary
         }
 
         [TestMethod]
-        public void Equipment_DescriptionMax()
+        public void Incident_DescriptionMax()
         {
             //create an instance of the class we want to create
             clsIncident AIncident = new clsIncident();

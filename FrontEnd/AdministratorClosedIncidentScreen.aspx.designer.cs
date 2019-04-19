@@ -10,7 +10,16 @@
 namespace FrontEnd {
     
     
-    public partial class HomeScreen {
+    public partial class AdministratorClosedIncidentScreen {
+        
+        /// <summary>
+        /// btnHome control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnHome;
         
         /// <summary>
         /// btnLogOut control.
@@ -22,13 +31,13 @@ namespace FrontEnd {
         protected global::System.Web.UI.WebControls.Button btnLogOut;
         
         /// <summary>
-        /// lstIncidents control.
+        /// lstClosedIncident control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox lstIncidents;
+        protected global::System.Web.UI.WebControls.ListBox lstClosedIncident;
         
         /// <summary>
         /// lblError control.
@@ -40,6 +49,33 @@ namespace FrontEnd {
         protected global::System.Web.UI.WebControls.Label lblError;
         
         /// <summary>
+        /// btnDisplayAll control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnDisplayAll;
+        
+        /// <summary>
+        /// txtFilterByIncidentID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtFilterByIncidentID;
+        
+        /// <summary>
+        /// btnFilterByIncidentID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnFilterByIncidentID;
+        
+        /// <summary>
         /// txtFilterByStaffID control.
         /// </summary>
         /// <remarks>
@@ -49,102 +85,30 @@ namespace FrontEnd {
         protected global::System.Web.UI.WebControls.TextBox txtFilterByStaffID;
         
         /// <summary>
-        /// btnSearchForIncident control.
+        /// btnFilterByStaffID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSearchForIncident;
+        protected global::System.Web.UI.WebControls.Button btnFilterByStaffID;
         
         /// <summary>
-        /// txtFilterByAssignIncidentTo control.
+        /// btnEditEquipmentDetails control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFilterByAssignIncidentTo;
+        protected global::System.Web.UI.WebControls.Button btnEditEquipmentDetails;
         
         /// <summary>
-        /// btnFilterByAssignTo control.
+        /// btnDeleteClosedIncidentDetails control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnFilterByAssignTo;
-        
-        /// <summary>
-        /// txtFilterByEquipmentID control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFilterByEquipmentID;
-        
-        /// <summary>
-        /// btnFilterByEquipmentID control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnFilterByEquipmentID;
-        
-        /// <summary>
-        /// txtFilterByHigh control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFilterByHigh;
-        
-        /// <summary>
-        /// btnFilterByHigh control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnFilterByHigh;
-        
-        /// <summary>
-        /// btnAddNewIncident control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddNewIncident;
-        
-        /// <summary>
-        /// btnEditIncidentDetails control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEditIncidentDetails;
-        
-        /// <summary>
-        /// txtFilterByClosedIncident control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFilterByClosedIncident;
-        
-        /// <summary>
-        /// btnFilterByClosedIncident control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnFilterByClosedIncident;
+        protected global::System.Web.UI.WebControls.Button btnDeleteClosedIncidentDetails;
     }
 }

@@ -16,6 +16,9 @@
     <br />
     <br />
     <asp:Button ID="btnRoles" runat="server" style="font-weight: bold; font-size: xx-large;" Text="Roles" OnClick="btnRoles_Click" Height="100px" Width="300px" />
+        <br />
+        <br />
+    <asp:Button ID="btnClosedIncidents" runat="server" style="font-weight: bold; font-size: xx-large;" Text="Closed Incidents" Height="100px" Width="300px" OnClick="btnClosedIncidents_Click" />
     </strong>
         </div>
 </asp:Content>

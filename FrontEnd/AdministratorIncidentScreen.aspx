@@ -76,14 +76,8 @@
             Filter by Closed Incident:
             <asp:TextBox ID="txtFilterByClosedIncident" runat="server"></asp:TextBox>
             &nbsp;<asp:Button ID="btnFilterByClosedIncident" runat="server" style="font-weight: 700" Text="Search for Incidents" OnClick="btnFilterByClosedIncident_Click" />
-&nbsp;&nbsp;&nbsp;&nbsp;
-
-   
-        Close incident:
-        <asp:Button ID="btnCloseIncident" runat="server" style="font-weight: 700" Text="Close" />
+            &nbsp;&nbsp;&nbsp;&nbsp;
     </p>
-    <br />
-    <br />
         </div>
-    </asp:Content>
+</asp:Content>
 

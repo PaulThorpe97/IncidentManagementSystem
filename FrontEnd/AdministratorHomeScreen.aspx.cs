@@ -32,9 +32,15 @@ namespace FrontEnd
             Response.Redirect("AdministratorEquipmentScreen.aspx");
         }
 
+        protected void btnClosedIncidents_Click(object sender, EventArgs e)
+        {
+            //direct to  ClosedIncident screen
+            Response.Redirect("AdministratorClosedIncidentScreen.aspx");
+        }
+
         protected void btnRoles_Click(object sender, EventArgs e)
         {
-            //direct to  roles screen
+            //direct to  ClosedIncident screen
             Response.Redirect("AdministratorRoleScreen.aspx");
         }
     }

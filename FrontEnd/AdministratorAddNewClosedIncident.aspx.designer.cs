@@ -10,7 +10,7 @@
 namespace FrontEnd {
     
     
-    public partial class ClosedIncidentsHomeScreen {
+    public partial class AdministratorAddNewClosedIncident {
         
         /// <summary>
         /// btnHome control.
@@ -22,66 +22,66 @@ namespace FrontEnd {
         protected global::System.Web.UI.WebControls.Button btnHome;
         
         /// <summary>
-        /// btnLogOut control.
+        /// txtAddIncidentID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLogOut;
+        protected global::System.Web.UI.WebControls.TextBox txtAddIncidentID;
         
         /// <summary>
-        /// lstClosedIncidents control.
+        /// txtAddStaffID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox lstClosedIncidents;
+        protected global::System.Web.UI.WebControls.TextBox txtAddStaffID;
         
         /// <summary>
-        /// btnDisplayAllClosedIncidents control.
+        /// txtAddDateClosed control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnDisplayAllClosedIncidents;
+        protected global::System.Web.UI.WebControls.TextBox txtAddDateClosed;
         
         /// <summary>
-        /// txtFilterByStaffID control.
+        /// txtAddClosedIncidentDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFilterByStaffID;
+        protected global::System.Web.UI.WebControls.TextBox txtAddClosedIncidentDescription;
         
         /// <summary>
-        /// btnSearchForClosedIncident control.
+        /// lblError control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSearchForClosedIncident;
+        protected global::System.Web.UI.WebControls.Label lblError;
         
         /// <summary>
-        /// btnEditClosedIncidentDetails control.
+        /// btnAddClosedIncident control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEditClosedIncidentDetails;
+        protected global::System.Web.UI.WebControls.Button btnAddClosedIncident;
         
         /// <summary>
-        /// btnDeleteClosedIncidentDetails control.
+        /// btnAddClosedIncidentCancel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnDeleteClosedIncidentDetails;
+        protected global::System.Web.UI.WebControls.Button btnAddClosedIncidentCancel;
     }
 }
