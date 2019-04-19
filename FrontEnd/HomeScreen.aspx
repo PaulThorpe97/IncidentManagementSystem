@@ -76,10 +76,6 @@
 &nbsp;&nbsp;&nbsp;&nbsp;
 
    
-        Close incident:
-        <asp:Button ID="btnCloseIncident" runat="server" style="font-weight: 700" Text="Close" />
-    </p>
-    <br />
-    <br />
+        </p>
         </div>
-    </asp:Content>
+</asp:Content>

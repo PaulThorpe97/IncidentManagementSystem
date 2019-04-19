@@ -272,5 +272,13 @@ namespace FrontEnd
             //return the count of records found
             return RecordCount;
         }
+
+        protected void btnCloseIncident_Click(object sender, EventArgs e)
+        {
+            //store -1 into the session object to indicate his is a new record
+            Session["Close_Incident_ID"] = -1;
+            //redirect to the data entry page
+            Response.Redirect("AddNewClosedIncident.aspx");
+        }
     }
 }

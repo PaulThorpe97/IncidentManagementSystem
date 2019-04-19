@@ -198,7 +198,7 @@ namespace TestLibrary
             //create an instance of the class we want to create
             clsClosedIncidentCollection FilteredClosedIncident = new clsClosedIncidentCollection();
             //apply an equipment name that doesnt exist
-            FilteredClosedIncident.FilterByIncident_ID("5");
+            FilteredClosedIncident.FilterByIncident_ID("100");
             //test to see that there are no records
             Assert.AreEqual(0, FilteredClosedIncident.Count);
         }
@@ -211,7 +211,7 @@ namespace TestLibrary
             //var to store outcome
             Boolean OK = true;
             //apply the equipment that doesn't exist
-            FilteredClosedIncident.FilterByIncident_ID("5");
+            FilteredClosedIncident.FilterByIncident_ID("100");
             //check that the correct numnber of records are found
             if (FilteredClosedIncident.Count == 2)
             {

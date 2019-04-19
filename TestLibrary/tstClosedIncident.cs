@@ -114,7 +114,7 @@ namespace TestLibrary
             //invoke the method
             Found = AClosedIncident.Find(Closed_Incident_ID);
             //check the Equipment_ID
-            if (AClosedIncident.Closed_Incident_Date_Closed != Convert.ToDateTime("18/04/2019"))
+            if (AClosedIncident.Closed_Incident_Date_Closed != Convert.ToDateTime("19/04/2019"))
             {
                 OK = false;
             }
@@ -136,7 +136,7 @@ namespace TestLibrary
             //invoke the method
             Found = AClosedIncident.Find(Closed_Incident_ID);
             //check the Equipment_ID
-            if (AClosedIncident.Closed_Incident_Description != "Test")
+            if (AClosedIncident.Closed_Incident_Description != "Test closure")
             {
                 OK = false;
             }
@@ -282,7 +282,7 @@ namespace TestLibrary
             //invoke the method
             Error = AClosedIncident.Valid(Closed_Incident_Date_Closed, Closed_Incident_Description);
             //test to see the result is correct
-            Assert.AreNotEqual(Error, "");
+            Assert.AreEqual(Error, "");
         }
 
         [TestMethod]
