@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
     <title></title>
 </head>
@@ -40,8 +40,7 @@
 &nbsp;</div>
         <asp:Button ID="btnSignIn" runat="server" Text="Sign-in" OnClick="btnSignIn_Click" />
 &nbsp;<asp:Button ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
-&nbsp;<asp:Button ID="btnReSend" runat="server" Text="Re-set Password" OnClick="btnReSend_Click" />
-    </div>
+&nbsp;</div>
 </body>
 </html>
 </asp:Content>
